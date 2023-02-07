@@ -1,0 +1,2 @@
+# SchedMaster
+Timetable for students
