@@ -1,0 +1,19 @@
+@font-face{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/static/Rubik-Light.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/static/Comfortaa-Light.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/static/Comfortaa-Regular.ttf) format("truetype");
+}

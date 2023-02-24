@@ -34,6 +34,8 @@ body{
 .head-support-text{
     text-align: center;
     font-family: 'Comfortaa',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .header-come{
@@ -42,11 +44,11 @@ body{
     
     left:50%;
     transform: translate(-50%,-50%);
-    bottom:140px;
+    bottom:12%;
     
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa',sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 32px;
     
 }
@@ -63,6 +65,7 @@ body{
 
 .image{
     height: 100vh;
+    display: block;
 }
 
 .coming{
