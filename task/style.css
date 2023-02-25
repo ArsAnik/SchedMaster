@@ -1,0 +1,14 @@
+.header-text{
+    display: flex;
+    position: absolute;
+    width: 900px;
+    height: 110px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-content: center;
+}
+
+.header-text-task{
+    text-align: center;
+}
