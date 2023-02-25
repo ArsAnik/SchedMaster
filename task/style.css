@@ -1,3 +1,10 @@
+.header{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .header-text{
     display: flex;
     position: relative;
@@ -58,25 +65,42 @@
     color: #000;
 }
 .header-line{
-    position: absolute;
-    top:13%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: block;
+    margin: 0 auto;
     width: 1200px;
     height: 0px;
     border-top: 1px solid #000;
 }
 
-.header-items{
+.personLetter{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
+.open-personalWindow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    font-size: 32px;
+    color: #000;
+}
+
+.tasks-items{
+    position: relative;
+    width: 843px;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+
 .task-item{
     position: relative;
-    margin: 20px;
+    margin: 20px 0;
     width: 843px;
     height: 73px;
     border-radius: 20px;
@@ -132,15 +156,19 @@
     font-size: 14px;
     line-height: 17px;
 }
-.open-personalWindow{
-    position: absolute;
-    right: 1.39%;
-    top: 1.95%;
-}
+
 .add-task{
-    position: absolute;
+    position: fixed;
     right:3%;
     bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 97px;
+    height: 97px;
+    background: rgba(153, 51, 204, 0.5);
+    border: 0.5px solid #9933CC;
 }
 
 
