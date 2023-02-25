@@ -1,14 +1,145 @@
 .header-text{
     display: flex;
-    position: absolute;
-    width: 900px;
+    position: relative;
+    width: 1000px;
     height: 110px;
-    top: 10%;
+    top: 60px;
     left: 50%;
     transform: translate(-50%,-50%);
+    
+    justify-content: center;
     align-content: center;
+    
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    align-items: center;
+}
+
+
+.header-text-calendar{
+    text-align: center;
+    width: 155px;
+    height: 32px;
+    margin-left: 40px;
+    
+}
+
+.header-text-schedule{
+    width: 235px;
+    height: 32px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    padding-left: 50px;
+    padding-right: 30px;
 }
 
 .header-text-task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 155px;
+    height: 32px;
+    border-radius: 50px;
+    margin-right: 50px;
+    background-color: rgba(153, 51, 204, 0.3);
 }
+.header-text-calendar-button{
+    color: #000;
+}
+.header-text-task-button{
+    color: #000;
+}
+.header-text-schedule-button{
+    color: #000;
+}
+.header-line{
+    position: absolute;
+    top:13%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    height: 0px;
+    border-top: 1px solid #000;
+}
+
+.header-items{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.task-item{
+    position: relative;
+    margin: 20px;
+    width: 843px;
+    height: 73px;
+    border-radius: 20px;
+    background-color: rgba(153, 51, 204, 0.3);
+    
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+
+.item-time{
+    position: absolute;
+    text-align: center;
+    left:2%;
+    border-right: 0.7px solid #000;
+    padding-right: 17px;
+    
+}
+
+.item-description{
+    position: absolute; 
+    left:16%;
+}
+.item-time-data{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.item-time-exact{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.item-description-head{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.item-description-addition{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.open-personalWindow{
+    position: absolute;
+    right: 1.39%;
+    top: 1.95%;
+}
+.add-task{
+    position: absolute;
+    right:3%;
+    bottom: 3%;
+}
+
+

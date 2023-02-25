@@ -17,3 +17,17 @@
     font-weight: 400;
     src: url(../fonts/static/Comfortaa-Regular.ttf) format("truetype");
 }
+
+@font-face{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/static/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/static/Montserrat-Medium.ttf) format("truetype");
+}
