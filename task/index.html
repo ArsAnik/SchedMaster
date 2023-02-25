@@ -5,41 +5,51 @@
         <meta charset="utf-8">
         <link rel ="stylesheet" href ="../styles/reset.css">
         <link rel ="stylesheet" href ="../styles/font.css">
+        <link rel ="stylesheet" href ="../styles/common.css">
         <link rel ="stylesheet" href ="style.css">
+    
         
         <title>Task Page</title>
     </head>
     
     <body>
         
-        <div class="main-div">
+        <div class="main-container">
             
-            <div class="header-text">
-                <div class="header-text-task">
+            <header class="header">
+                <div class="header-text">
+                    <div class="header-text-task">
+                        
+                        <a class="header-text-task-button" href="@">Задачи</a>
+                        
+                    </div>
                     
-                    <a class="header-text-task-button" href="@">Задачи</a>
+                    <div class="header-text-schedule"> 
+                        
+                        <a class="header-text-schedule-button" href="@">Расписание</a>
+                        
+                    </div>
+                    
+                    <div class="header-text-calendar">
+                        
+                        <a class="header-text-calendar-button" href="@">Календарь</a>
+                        
+                    </div>
                     
                 </div>
-                
-                <div class="header-text-schedule"> 
-                    
-                    <a class="header-text-schedule-button" href="@">Расписание</a>
-                    
-                </div>
-                
-                <div class="header-text-calendar">
-                    
-                    <a class="header-text-calendar-button" href="@">Календарь</a>
-                    
-                </div>
-                
-            </div>
+
+                <a class="open-personalWindow">
+                    <span class="personLetter">Я</span>
+                    <img src="../pictures/meButton.png" alt="аватарка">
+                </a>
+            </header>
+        
             
             <div class= "header-line">
                 
             </div>
             
-            <div class= "header-items">
+            <div class= "tasks-items">
                 
                 <a href="@"><div class="task-item">
                     <div class="item-time">
@@ -121,17 +131,9 @@
                 
             </div>
             
-            <div class="open-personalWindow">
-                <a href="@">
-                    <img src="../pictures/meButton.svg" alt="emae">
-                </a>
-            </div>
-            
-            <div class="add-task">
-                <a href="@">
-                    <img src="../pictures/plusButton.svg" alt="emae">
-                </a>
-            </div>
+            <a class="add-task" href="@">
+                <img src="../pictures/plus.svg" alt="Добавать задачу">
+            </a>
             
         </div>
         

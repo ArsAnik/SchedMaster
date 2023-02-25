@@ -1,0 +1,42 @@
+.image{
+    position: absolute;
+    right:0%;
+    height: 100vh;
+}
+
+.main-menu{
+    position: absolute;
+    width: 557px;
+    height: 714px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background: rgba(153, 51, 204, 0.1);
+    border: 0.5px solid #9933CC;
+    border-radius: 20px;
+}
+
+.menu-avatar{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 18%;
+    width: 179px;
+    height: 179px;
+    
+    background: rgba(153, 102, 204, 0.5);
+    border: 1px solid #9966CC;
+    border-radius: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
