@@ -7,3 +7,27 @@ body{
     width: 100%;
     min-height: 100% !important;
 }
+
+.arrow-fill{
+    fill: #AD5CD6;
+}
+
+.arrow-border{
+    stroke: #000;
+    stroke-opacity: 0.1;
+    stroke-width: 3px;
+}
+
+.arrow:not(.disabled):hover .arrow-fill{
+    fill: #C285E0;
+    transition: .2s;
+}
+
+.arrow:not(.disabled):active .arrow-fill{
+    fill: #9933CC;
+    transition: .1s;
+}
+
+.arrow.disabled{
+    fill: #B5AABB;
+}

@@ -89,6 +89,19 @@
     font-weight: 300;
     font-size: 32px;
     color: #000;
+    border: 1px solid #9966CC;
+    border-radius: 50%;
+}
+
+.without-avatar{
+    background: rgba(153, 51, 204, 0.5);
+}
+
+.open-personalWindow img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
 }
 
 .tasks-items{

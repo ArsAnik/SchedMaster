@@ -1,60 +1,72 @@
 .image{
     position: absolute;
     right:0%;
-    
+    display: block;
+    height: 100%;
 }
 
-.main-menu{
-    position: absolute;
+.account-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    min-height: 750px;
+}
+
+.account-block{
+    position: relative;
     width: 557px;
     height: 714px;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%,-50%);
-
+    margin: 0 auto;
     background: rgba(153, 51, 204, 0.1);
     border: 0.5px solid #9933CC;
     border-radius: 20px;
 }
 
-.menu-avatar{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 18%;
+.avatar-block{
+    position: relative;
+    
     width: 179px;
     height: 179px;
     
-    background: rgba(153, 102, 204, 0.5);
     border: 1px solid #9966CC;
     border-radius: 100px;
     
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    font-family: 'Inter';
+
+    margin: 36px auto 0;
+}
+.without-avatar{
+    background: rgba(153, 102, 204, 0.5);
+}
+.avatar{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.personLetter{
+    font-family: 'Comfortaa';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 36px;
     color: #000000;
 }
 .information{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 38%;
+    width: 180px;
+    margin: 30px auto 0;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    width: 200px;
     
 }
 .information-name{
-    width: 170px;
+    width: 180px;
     height: 30px;
     margin-left:15px;
     display: flex;
@@ -63,7 +75,7 @@
     border-bottom: 0.5px solid #000000;
 }
 .information-group{
-    width:190px;
+    width: 190px;
     height: 30px;
     margin-left:5px;
     margin-top: 16px;
@@ -102,13 +114,13 @@
     
 }
 
-.menu-exit{
+.account-exit{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 115px;
     width: 400px;
     height: 56px;
-    position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     
     display: flex;
     align-items: center;
@@ -128,9 +140,9 @@
 }
 .menu-developersLink{
     position: absolute;
-    top: 83%;
-    left: 50%;
     transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 108px;
     
     font-family: 'Comfortaa';
     font-style: normal;
@@ -140,7 +152,8 @@
     color:#000000;
 }
 
-
-
-
-
+.back-button{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
