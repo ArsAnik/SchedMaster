@@ -1,7 +1,7 @@
 .image{
     position: absolute;
     right:0%;
-    height: 100vh;
+    
 }
 
 .main-menu{
@@ -9,7 +9,7 @@
     width: 557px;
     height: 714px;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translate(-50%,-50%);
 
     background: rgba(153, 51, 204, 0.1);
@@ -40,3 +40,107 @@
     line-height: 15px;
     color: #000000;
 }
+.information{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 38%;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    width: 200px;
+    
+}
+.information-name{
+    width: 170px;
+    height: 30px;
+    margin-left:15px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    border-bottom: 0.5px solid #000000;
+}
+.information-group{
+    width:190px;
+    height: 30px;
+    margin-left:5px;
+    margin-top: 16px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    border-bottom: 0.5px solid #000000;
+}
+.information-change-name{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 76%;
+    top: 36%;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color:#000000;
+    
+}
+
+.information-change-group{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 76%;
+    top: 42%;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color:#000000;
+    
+}
+
+.menu-exit{
+    width: 400px;
+    height: 56px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: #FFFFFF;
+    border: 0.5px solid #9999CC;
+    border-radius: 20px;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+}
+.menu-developersLink{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color:#000000;
+}
+
+
+
+
+
