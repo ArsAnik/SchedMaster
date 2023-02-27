@@ -19,7 +19,7 @@ body{
 }
 
 .arrow:not(.disabled):hover .arrow-fill{
-    fill: #C285E0;
+    fill: #CC99E5;
     transition: .2s;
 }
 
