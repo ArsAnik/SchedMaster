@@ -38,3 +38,11 @@
     font-weight: 300;
     src: url(../fonts/static/Montserrat-Light.ttf) format("truetype");
 }
+
+
+@font-face{
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/static/Nunito-Light.ttf) format("truetype");
+}
