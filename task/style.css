@@ -89,5 +89,10 @@
     background: rgba(153, 51, 204, 0.5);
     border: 0.5px solid #9933CC;
 }
-
-
+.add-task:hover{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+.add-task:active{
+    background: rgba(153, 51, 204, 0.7);
+    border: 0.5px solid #9933CC;
+}

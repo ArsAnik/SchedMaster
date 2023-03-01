@@ -52,6 +52,16 @@
 .without-avatar{
     background: rgba(153, 51, 204, 0.5);
 }
+.without-avatar:hover{
+    background: rgba(153, 51, 204, 0.5);
+    border: 0.5px solid #9933CC;
+    box-shadow: 0px 0px 10px #9933CC;
+}
+.without-avatar:active{
+    background: rgba(153, 51, 204, 0.8);
+    border: 0.5px solid #9933CC;
+    box-shadow: 0px 0px 10px #9933CC;
+}
 .personLetter{
     position: absolute;
     top: 50%;
@@ -104,6 +114,42 @@
     margin-right: 50px;
     
 
+}
+.header-text-task a{
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header-text-schedule a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header-text-calendar a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header-text-task:hover{
+    background-color: rgba(153, 51, 204, 0.1);
+}
+.header-text-task:active{
+    background-color: rgba(153, 51, 204, 0.3);
+}
+.header-text-schedule:hover{
+    background-color: rgba(153, 51, 204, 0.1);
+}
+.header-text-schedule:active{
+    background-color: rgba(153, 51, 204, 0.3);
+}
+.header-text-calendar:hover{
+    background-color: rgba(153, 51, 204, 0.1);
+}
+.header-text-calendar:active{
+    background-color: rgba(153, 51, 204, 0.3);
 }
 
 
