@@ -87,6 +87,7 @@
     height: 32px;
     margin-left: 40px;
     
+    border-radius: 50px;
 }
 
 .header-text-schedule{
@@ -95,14 +96,23 @@
     justify-content: center;
     text-align: center;
     
-    width: 235px;
+    width: 255px;
     height: 32px;
     border-right: 1px solid #000;
     border-left: 1px solid #000;
-    padding-left: 50px;
-    padding-right: 30px;
+    
 }
-
+.header-text-schedule-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    width: 82%;
+    height: 32px;
+    
+    border-radius: 50px;
+}
 .header-text-task{
     display: flex;
     align-items: center;
@@ -111,9 +121,9 @@
     
     width: 155px;
     height: 32px;
-    margin-right: 50px;
+    margin-right: 40px;
     
-
+    border-radius: 50px;
 }
 .header-text-task a{
     
@@ -139,10 +149,10 @@
 .header-text-task:active{
     background-color: rgba(153, 51, 204, 0.3);
 }
-.header-text-schedule:hover{
+.header-text-schedule-container:hover{
     background-color: rgba(153, 51, 204, 0.1);
 }
-.header-text-schedule:active{
+.header-text-schedule-container:active{
     background-color: rgba(153, 51, 204, 0.3);
 }
 .header-text-calendar:hover{

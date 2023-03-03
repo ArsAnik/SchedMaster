@@ -1,0 +1,129 @@
+.header-text-task{
+    background-color: rgba(153, 51, 204, 0.3);
+}
+
+.back-button{
+    position: absolute;
+    top: 9.7%;
+    left: 4.5%;
+}
+
+.watch-task{
+    position: relative;
+    margin: 70px auto;
+    width: 930px;
+    height: 624px;
+    background-color: rgba(153, 51, 204, 0.3);
+    border: 1px solid #9933CC;
+    border-radius: 20px;
+}
+
+.task-header{
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    top: 10.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.task-header-underline{
+  
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 559px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.task-additional{
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 255px;
+    height: 72px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.additional-information{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.information-data{
+    margin-right: 7%;
+}
+
+.additional-remembering{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-end;
+}
+.remembering-word{
+    margin-right: 3%;
+}
+
+.remembering-times{
+    text-align: end;
+}
+.remembering-time span{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.task-description{
+    margin-top: 3%;
+    margin-left: 9%;
+    
+    font-family: 'Montserrat';
+}
+.description-header{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.description-text{
+    width: 774px;
+    
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-variant: small-caps;
+    
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+.modify-button{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.modify-button:hover{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
+
+.modify-button:active{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
+
+
+
+
+
+
