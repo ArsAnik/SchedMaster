@@ -6,59 +6,17 @@
         <meta charset="utf-8">
         <link rel ="stylesheet" href ="../styles/reset.css">
         <link rel ="stylesheet" href ="../styles/font.css">
-        <link rel ="stylesheet" href ="../styles/common.css"><!doctype html>
-<html>
-    
-    <head>
-        
-        <meta charset="utf-8">
-        <link rel ="stylesheet" href ="../styles/reset.css">
-        <link rel ="stylesheet" href ="../styles/font.css">
         <link rel ="stylesheet" href ="../styles/common.css">
         <link rel ="stylesheet" href ="style.css">
         <link rel="stylesheet" href="../styles/headerTSC-style.css">
         
-        <title>Task Watch-Task Page</title>
+        <title>Task Create-Task Page</title>
         
     </head>
     
     <body>
         
         <div class="main-container">
-            
-            <header class="header">
-                <div class="header-text">
-                    <div class="header-text-task">
-                        
-                        <a class="header-text-task-button" href="@">Задачи</a>
-                        
-                    </div>
-                    
-                    <div class="header-text-schedule">
-                        <div class="header-text-schedule-container">
-                        
-                        <a class="header-text-schedule-button" href="@">Расписание</a>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="header-text-calendar">
-                        
-                        <a class="header-text-calendar-button" href="@">Календарь</a>
-                        
-                    </div>
-                    
-                </div>
-
-                <a class="open-personalWindow without-avatar" href="@">
-                    <span class="personLetter">Я</span>
-                    <!--<img src="../pictures/meButton.png" alt="аватарка">-->
-                </a>
-            </header>
-            
-            <div class= "header-line">
-                
-            </div>
             
             <div class="back-button">
                 <a href="@">
@@ -69,48 +27,63 @@
                 </a>
             </div>
             
-            <div class="watch-task">
+            <div class="new-task">
                 
-                <form><div class="task-header">
+                <div class="task-header">
                     
-                    <textarea class="header-modify">Наглаживание кота</textarea>
+                    <form><input placeholder="Введите название" class="task-header-input"></form>
                     
-                </div></form>
-                
-                <div class="task-header-underline"></div>
-                <div class="task-additional">
-                
-                    <div class="additional-information">
-
-                        <div class="information-data">15.02.2023</div>
-                        <div class="information-time">20:00 - 21:00</div>
-
-
-                    </div>
-                    <div class ="additional-remembering">
-                        
-                        <div class="remembering-word">Напомнить </div>
-                        <div class="remembering-times">
-                            <div class="remembering-time">
-                                за <span>30 минут</span>
-                            </div>
-                            <div class="remembering-time">
-                                за <span>5 минут</span>
-                            </div>
-                        </div>
-                        
-                    </div>
                 </div>
                 
-                <div class="task-description">
+                <div class="task-header-line"></div>
+                
+                <div class="task-modify-elements">
                     
-                    <div class="description-header"><span>Описание Задачи:</span></div>
-                    <form><div class="description-text"><textarea class="description-text-modify">Погладь кота! Нет сам погладь кота! Да не хочу я гладить кота! А ты должен его гладить!!!!</textarea></div>
+                    <div class="element-data-start">
+                        
+                        <a href="@" class="text-link-color">Дата-время начала</a>
+                        
+                    </div>
+                    
+                    <div class="element-data-end">
+                        
+                        <a href="@" class="text-link-color">Дата-время окончания</a>
+                        
+                    </div>
+                    
+                    <div class="element-notification-whole-day">
+                        
+                        <label>
+                            <a href="@"><img src="../pictures/add-task-clock.svg"></a>
+                            <span class="text-link-color">Весь день</span>
+                            <input type="checkbox">
+                            
+                        </label>
+                        
+                        
+                    </div>
+                    
+                    <div class="element-notification-add">
+                        <div class="add-bell-container"><a href="@" class="notification-add-bell"><img src="../pictures/add-task-bell.svg"></a></div>
+                        <div class="add-notification-container"><a href="@" class="text-link-color">Добавить уведомление</a></div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="new-task-description">
+                    
+                    <span class="description-header">Описание Задачи:</span>
+                    
+                    
+                    <form>
+                        <textarea class="task-description-text" placeholder="добавьте описание"></textarea>
                     </form>
                     
                 </div>
                 
-                <a href= "@" class="save-button-cntainer"><div class="save-button">
+                <a href= "@" class="save-button-container"><div class="save-button">
                     
                     Сохранить
                     
@@ -121,14 +94,5 @@
         </div>
         
     </body>
-    
-    
-</html>
-        <link rel ="stylesheet" href ="style.css">
-        <link rel="stylesheet" href="../styles/headerTSC-style.css">
-        
-        <title>Task Add-Task Page</title>
-        
-    </head>
     
 </html>

@@ -1,0 +1,176 @@
+.header-text-task{
+    background-color: rgba(153, 51, 204, 0.3);
+}
+
+.back-button{
+    position: absolute;
+    top: 9.7%;
+    left: 4.5%;
+}
+
+.watch-task{
+    position: relative;
+    margin: 70px auto;
+    width: 930px;
+    height: 624px;
+    background-color: rgba(153, 51, 204, 0.3);
+    border: 1px solid #9933CC;
+    border-radius: 20px;
+}
+
+.task-header{
+    position: absolute;
+    width: 410px;
+    height: 49px;
+    top: 10.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 49px;
+    
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.task-header-underline{
+  
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 559px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.task-additional{
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 255px;
+    height: 72px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.additional-information{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.information-data{
+    margin-right: 7%;
+    color: #000;
+}
+.information-time{
+    color: #000;
+}
+.additional-remembering{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-end;
+}
+.remembering-word{
+    margin-right: 3%;
+}
+
+.remembering-times{
+    text-align: end;
+}
+.remembering-time span{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.task-description{
+    margin-top: 3%;
+    margin-left: 9%;
+    
+    font-family: 'Montserrat';
+}
+.description-header{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.description-text{
+    width: 774px;
+    
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-variant: small-caps;
+    
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.save-button{
+    position: absolute;
+    left:50%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    
+    width: 394px;
+    height: 56px;
+    
+    background-color: #FFFFFF;
+    border: 0.5px solid #9933CC;
+    border-radius: 20px;
+    
+    color: #000;
+    
+    display: flex;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-button:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.save-button:active{
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.description-text-modify{
+    width: 774px;
+    height: 250px;
+    
+    font-weight: 300;
+    
+    resize: none;
+    outline: none;
+    padding: 15px;
+}
+
+.description-text-modify:focus{
+    border: 1px solid #9933CC;
+    border-radius: 10px;
+}
+.header-modify{
+    font-weight: 300;
+    color: #000;
+}
+.additional-remembering-link{
+    display: flex;
+    width: 255px;
+    justify-content:flex-end;
+    color:#000;
+}
+.information-data-link{
+    margin-right: 7%;
+}
+
