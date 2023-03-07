@@ -1,0 +1,35 @@
+.back-button{
+    position: absolute;
+    top: 10.8%;
+    left: 9%;
+}
+.forward-button{
+    position: absolute;
+    top: 10.8%;
+    right: 9%;
+}
+.forward-button svg{
+    transform: scale(-1,1);
+}
+.week-days-container{
+    margin: 4% auto;
+    width: 1362px;
+    height: 56px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.weekday{
+    width: 179px;
+    height: 56px;
+    text-align: center;
+    
+    background-color: rgba(153, 51, 204, 0.3);
+    border-radius: 50px;
+}
+
+
+
+
+
+

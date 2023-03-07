@@ -14,7 +14,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     
-    justify-content: center;
+    
     align-content: center;
     
     
@@ -29,7 +29,7 @@
 .header-line{
     display: block;
     margin: 0 auto;
-    width: 1200px;
+    width: 1030px;
     height: 0px;
     border-top: 1px solid #000;
 }
@@ -37,8 +37,8 @@
 
 .open-personalWindow{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10%;
+    right: -2.4%;
     width: 64px;
     height: 64px;
     font-family: 'Comfortaa';
@@ -83,9 +83,9 @@
     text-align: center;
     
     text-align: center;
-    width: 155px;
+    width: 179px;
     height: 32px;
-    margin-left: 40px;
+    margin-left: 38px;
     
     border-radius: 50px;
 }
@@ -108,7 +108,7 @@
     justify-content: center;
     text-align: center;
     
-    width: 82%;
+    width: 70.2%;
     height: 32px;
     
     border-radius: 50px;
@@ -119,28 +119,11 @@
     justify-content: center;
     text-align: center;
     
-    width: 155px;
+    width: 179px;
     height: 32px;
-    margin-right: 40px;
-    
+    margin-right: 17px;
+    margin-left: 177px;
     border-radius: 50px;
-}
-.header-text-task a{
-    
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.header-text-schedule a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.header-text-calendar a{
-    display: block;
-    width: 100%;
-    height: 100%;
 }
 
 .header-text-task:hover{
