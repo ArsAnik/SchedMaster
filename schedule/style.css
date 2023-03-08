@@ -20,14 +20,29 @@
     justify-content: space-between;
 }
 .weekday{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     width: 179px;
     height: 56px;
     text-align: center;
     
     background-color: rgba(153, 51, 204, 0.3);
     border-radius: 50px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: lowercase;
 }
-
+.weekday-data{
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+}
 
 
 
