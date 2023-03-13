@@ -12,6 +12,7 @@
     position: relative;
     height: 100vh;
     min-height: 750px;
+    background: url("../pictures/personalAccount.svg") right bottom no-repeat;
 }
 
 .account-block{
@@ -19,7 +20,7 @@
     width: 557px;
     height: 714px;
     margin: 0 auto;
-    background: rgba(153, 51, 204, 0.1);
+    background: #F5EBFA;
     border: 0.5px solid #9933CC;
     border-radius: 20px;
 }
@@ -48,7 +49,7 @@
     width: 100%;
 }
 .personLetter{
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 52px;
@@ -56,41 +57,36 @@
     color: #000000;
 }
 .information{
-    width: 180px;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 500px;
+    flex-direction: column;
     margin: 30px auto 0;
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
+    overflow: hidden;
     
 }
 .information-name{
-    width: 180px;
     height: 30px;
-    margin-left:15px;
     display: flex;
     align-items:flex-end;
     justify-content: center;
     border-bottom: 0.5px solid #000000;
 }
 .information-group{
-    width: 190px;
     height: 30px;
-    margin-left:5px;
     margin-top: 16px;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
     border-bottom: 0.5px solid #000000;
 }
 .information-change-name{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 76%;
-    top: 36%;
-    
-    font-family: 'Comfortaa';
+    font-family: 'Comfortaa', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -104,14 +100,35 @@
     transform: translate(-50%,-50%);
     left: 76%;
     top: 42%;
-    
-    font-family: 'Comfortaa';
+
+    font-family: 'Comfortaa', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
     line-height: 11px;
     color:#000000;
     
+}
+
+.information-change-button{
+    display: block;
+    margin: 15px auto 0;
+    width: 62px;
+    cursor: pointer;
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color: #000;
+}
+
+.information-change-button:hover{
+    text-shadow: 0px 0px 10px rgba(153, 51, 204, 0.7);
+}
+
+.information-change-button:active{
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(153, 51, 204, 0.7);
 }
 
 .account-exit{
@@ -130,8 +147,8 @@
     background-color: #FFFFFF;
     border: 0.5px solid #9999CC;
     border-radius: 20px;
-    
-    font-family: 'Comfortaa';
+
+    font-family: 'Comfortaa', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -143,8 +160,8 @@
     transform: translate(-50%,-50%);
     left: 50%;
     bottom: 108px;
-    
-    font-family: 'Comfortaa';
+
+    font-family: 'Comfortaa', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -156,4 +173,47 @@
     position: absolute;
     top: 10%;
     left: 7%;
+}
+
+@media (max-width: 1100px) {
+    .image{
+        z-index: 1;
+        display: block;
+        height: 100%;
+    }
+    .back-button{
+        display: none;
+    }
+    .account-block{
+        width: 330px;
+        height: 551px;
+    }
+    .avatar-block{
+        width: 110px;
+        height: 110px;
+    }
+    .personLetter{
+        font-size: 38px;
+    }
+    .information{
+        margin-top: 50px;
+        font-size: 20px;
+        max-width: 320px;
+    }
+    .information-group{
+        margin-top: 14px;
+    }
+    .information-change-button{
+        margin-top: 9px;
+    }
+    .account-exit{
+        font-size: 22px;
+        width: 264px;
+        height: 43px;
+        bottom: 56px;
+    }
+    .menu-developersLink{
+        bottom: 40px;
+        font-size: 10px;
+    }
 }
