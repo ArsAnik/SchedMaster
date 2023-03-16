@@ -4,6 +4,7 @@
     <head>
         
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel ="stylesheet" href ="../styles/reset.css">
         <link rel ="stylesheet" href ="../styles/font.css">
         <link rel ="stylesheet" href ="style.css">
@@ -15,10 +16,6 @@
     <body>
         
         <div class="main-container">
-            
-            <div> <img class ="image "src="../pictures/personalAccount.svg">
-            </div>
-            
             <div class="account-wrapper">
                 <div class="account-block">
                     
@@ -26,20 +23,13 @@
                         <span class="personLetter">Я</span>
                         <!--<img сlass="avatar" src="../pictures/meButton.png" alt="аватарка">-->
                     </a>
-                    
-                    <!-- На уточнении у дизайнера
-                        <div class= "information">
-                        
-                        <input class="information-name" value="mashasuper" />
-                        
-                        <input class="information-group">
-                            6205-010302D
-                        </input>
-                        
-                        
+
+                    <div class= "information">
+                        <span class="information-name">mashasuper</span>
+                        <span class="information-group">6205-010302D</span>
                     </div>
-                    <a href="@"><span class="information-change-name"> изменить</span></a>
-                    <a href="@"><span class="information-change-group"> изменить</span></a>-->
+
+                    <a class="information-change-button" href="@">изменить</a>
                     
                     <a href="@"><div class="account-exit">
                         
@@ -47,7 +37,7 @@
                         
                     </div></a>
                     
-                    <a href="@"><span class="menu-developersLink">Связь с разработчиками</span></a>
+                    <a href="@" class="menu-developersLink">Связь с разработчиками</a>
                     
                 </div>
             </div>
