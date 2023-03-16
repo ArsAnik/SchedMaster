@@ -1,3 +1,6 @@
+.header-text-schedule-container{
+    background: rgba(153, 51, 204, 0.3);
+}
 .back-button{
     position: absolute;
     top: 10.8%;
@@ -38,11 +41,126 @@
     line-height: 24px;
     text-transform: lowercase;
 }
+
 .weekday-data{
     display: block;
     font-size: 12px;
     line-height: 15px;
 }
+
+.schedule-table{
+    
+    margin: 0, auto;
+    width: 1362px;
+    height: 56px;
+    
+    background-color: aqua;
+    
+}
+.item-time{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+}
+.item-time-container{
+    transform: rotate(-90deg);
+}
+.item-task{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    width: 165px;
+    height: 90px;
+    
+    margin-bottom: 30px;
+    
+    border-radius: 5px;
+    background: rgba(153, 153, 204, 0.3);
+    
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    
+}
+
+.item-task-name{
+    position: relative;
+    top:13%;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.item-task-line{
+    position: relative;
+    top:17%;
+    left:12%;
+    text-align: center;
+    
+    width: 120px;
+    border: 1px solid #FFFFFF;
+}
+
+.item-task-description{
+    position: relative;
+    top: 28%;
+    text-align: center;
+    
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.item-balls{
+    position: absolute;
+    top:21%;
+    left: 5%;
+    
+    width: 2px;
+    height: 52px;
+    
+    
+    background-image: url(../pictures/ball_schedule.svg);
+    
+}
+
+.item-task-time-begin{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.item-task-time-end{
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
