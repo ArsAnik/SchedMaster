@@ -5,10 +5,8 @@
 }
 
 .new-task{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    position: relative;
+    margin: 5% auto;
     
     width: 554px;
     height: 624px;
@@ -39,7 +37,7 @@
     
 }
 .task-header-line{
-    width: 416px;
+    width: 75%;
     height: 0;
     
     margin: 2% auto;
@@ -116,13 +114,15 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
+    
+    
 }
 .task-description-text:focus{
     position: absolute;
     left: 5%;
     bottom:20%;
     transform: translate(-50,-50%);
-    width: 500px;
+    width: 90%;
     height: 100px;
     
     border: 1px solid #9933CC;
@@ -136,7 +136,7 @@
     bottom: 5%;
     transform: translate(-50%,-50%);
     
-    width: 394px;
+    width: 71%;
     height: 56px;
     
     background-color: #FFFFFF;
@@ -163,7 +163,52 @@
     box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-
+@media(max-width:767px){
+    .new-task{
+        max-width: 360px;
+        height: 551px;
+        top:55%;
+    }
+    .description-header{
+        margin-right: 3%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .task-description-text{
+        height: 15px;
+        font-size: 12px;
+        
+    }
+    .task-description-text:focus{
+        bottom:23%;
+    }
+    .element-notification-add{
+        
+        justify-content: center;
+    }
+    .add-notification-container{
+        margin-left: 4%;
+    }
+    
+    .task-modify-elements{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .task-header{
+        width: 247px;
+        height: 32px;
+        
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .task-header-input{
+        width: 247px;
+        
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
 
 
 
