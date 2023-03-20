@@ -18,7 +18,7 @@
             
             <header class="header">
                 <div class="header-text">
-                    <div class="header-text-task">
+                    <div class="header-text-task active">
                         
                         <a class="header-text-task-button" href="@">Задачи</a>
                         
@@ -44,14 +44,14 @@
                     <span class="personLetter">Я</span>
                     <!--<img src="../pictures/meButton.png" alt="аватарка">-->
                 </a>
+
+                <div class= "header-line">
+
+                </div>
             </header>
-        
-            
-            <div class= "header-line">
-                
-            </div>
             
             <div class= "tasks-items">
+                <!--Надо решить вопрос с точной у даты на мобилке -->
                 
                 <a href="@"><div class="task-item">
                     <div class="item-time">
@@ -61,7 +61,9 @@
                     
                     <div class="item-description">
                         <p class="item-description-head">Моя любимая бабушка &lt; 3 </p>
-                        <p class="item-description-addition">Сьездить к бабушке поесть пирожков</p>
+                        <div class="item-description-addition-box">
+                            <p class="item-description-addition">Сьездить к бабушке поесть пирожков</p>
+                        </div>
                     </div>
                 </div></a>
                 <a href="@"><div class="task-item">
@@ -99,8 +101,7 @@
                 </div></a>
                 <a href="@"><div class="task-item">
                     <div class="item-time">
-                        <p class="item-time-data">31.02.2023</p>
-                        <p class="item-time-exact">в 12.00</p>
+                        <p class="item-time-data">31.02.2023 - <br/> 31.03.2023</p>
                     </div>
                     
                     <div class="item-description">

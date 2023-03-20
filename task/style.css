@@ -5,9 +5,8 @@
 
 .tasks-items{
     position: relative;
-    width: 843px;
-    margin: 0 auto;
-    margin-top: 68px;
+    width: 320px;
+    margin: 68px auto 0;
 }
 
 .task-item{
@@ -37,13 +36,14 @@
     text-align: center;
     left:2%;
     border-right: 0.7px solid #000;
-    padding-right: 17px;
+    padding-right: 45px;
     
 }
 
 .item-description{
-    position: absolute; 
-    left:16%;
+    position: absolute;
+    width: 80%;
+    left: 16%;
 }
 .item-time-data{
     font-family: 'Montserrat',sans-serif;
@@ -66,14 +66,21 @@
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item-description-addition{
+    margin-top: 4px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .add-task{
@@ -84,8 +91,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 97px;
-    height: 97px;
+    width: 70px;
+    height: 70px;
     background: rgba(153, 51, 204, 0.5);
     border: 0.5px solid #9933CC;
 }
@@ -96,3 +103,60 @@
     background: rgba(153, 51, 204, 0.7);
 }
 
+@media (max-width: 1100px) {
+    .header{
+        display: none;
+    }
+    .tasks-items{
+        margin-top: 96px;
+    }
+    .task-item{
+        width: 320px;
+        height: 140px;
+    }
+    .item-time{
+        left: 14px;
+        width: 45px;
+        height: 100px;
+    }
+    .item-time-data{
+        width: 42px;
+        font-size: 14px;
+        line-height: 17px;
+        word-break: break-all;
+        margin-top: 4px;
+        text-align: left;
+    }
+    .item-time-exact{
+        font-size: 12px;
+        line-height: 15px;
+        text-align: left;
+    }
+    .item-time{
+        display: flex;
+        width: 42px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .item-description{
+        left: 23.44%;
+        width: 70%;
+        top: 18.82%;
+    }
+    .item-description-head{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .item-description-addition{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .item-description-addition-box{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
