@@ -165,9 +165,9 @@
 
 @media(max-width:767px){
     .new-task{
-        max-width: 360px;
+        max-width: 330px;
         height: 551px;
-        top:55%;
+        margin: 36% auto;
     }
     .description-header{
         margin-right: 3%;
