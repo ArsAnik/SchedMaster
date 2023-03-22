@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>edit user</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<style>
+    .centre {
+        text-align: center;
+    }
+    .small {
+        font-size: 70%;
+    }
+</style>
+<a href="/schedule_page/id={{id}}"><h1>◀</h1></a> <br><br>
+<div class="centre">
+    <div>{{message}}</div><br>
+    <form method="POST" action="/edit_personal_page/id={{id}}" >
+        <input name="avatar" value="{{avatar}}"/><br><br><br>
+        <input name="login" value="{{login}}"/><br><br>
+        <input name="group_name" value="{{group_name}}"/><br><br><br>
+        <p><input type="submit" class="small" value="Сохранить" /> | <a href="/personal_page/id={{id}}">Отмена</a></p>
+    </form>
+</div>
+</body>
+</html>

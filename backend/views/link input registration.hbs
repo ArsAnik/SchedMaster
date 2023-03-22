@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>restore password page</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<style>
+    .centre {
+        text-align: center;
+    }
+</style>
+<h1><a href="/main_page">◀</a></h1> <br><br>
+<div class="centre">
+    <h1>Регистрация</h1> <br>
+    <label>{{message}}</label> <br><br>
+    <form action="/registration_link_page" method="POST">
+        <input type="hidden" name="password" value="{{password}}"  class="field" />
+        <input type="hidden" name="login" value="{{login}}"  class="field" />
+        <input type="hidden" name="email" value="{{email}}"  class="field" />
+        <label>Введите ссылку на ваше рассписание</label><br>
+        <input name="pars_link" class="field" value="{{pars_link}}"/><br>
+        <input type="submit" value="Авторизация" />
+    </form>
+</div>
+</body>
+</html>

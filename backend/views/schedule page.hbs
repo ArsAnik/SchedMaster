@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule page</title>
+</head>
+<body>
+    <style>
+        .centre {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .big {
+            font-size: 160%;
+        }
+    </style>
+    <div class="right">
+        <a href="/personal_page/id={{id}}"><h2>Личный кабинет пользователя</h2> </a>
+    </div>
+    <div class="centre">
+        <div class="big">
+            <form action="/schedule_page/id={{id}}/act=0" method="POST" style="display:inline;">
+                <input type="hidden" name="week" value="{{week}}">
+                <input type="submit" value="◀" />
+            </form>
+            <a href="/tasks_page/id={{id}}">Задачи</a> <b class="big">Расписание</b> <a href="/calendar_page/id={{id}}">Календарь</a>
+            <form action="/schedule_page/id={{id}}/act=1" method="POST" style="display:inline;">
+                <input type="hidden" name="week" value="{{week}}">
+                <input type="submit" value="▶" />
+            </form>
+        </div> <br><br>
+        <p>Неделя {{week}}</p>
+        <h2>Рассписание:</h2> <br>
+        {{#if general_tasks}}
+            <table>
+                <tr><th>Name</th><th>Description</th><th>Date</th></tr>
+                {{#each general_tasks}}
+                     <tr>
+                         <input type="hidden" name="id" value="{{this.id}}"  class="field" />
+                         <input type="hidden" name="id" value="{{this.time_number}}"  class="field" />
+                         <td>{{this.name}}</td>
+                         <td>{{this.description}}</td>
+                         <td>{{this.date}}</td>
+                    </tr>
+                {{/each}}
+            </table><br>
+        {{else}}
+            <p>Пар нет</p> <br>
+        {{/if}}
+        <h2>Собственные задачи:</h2>
+        {{#if own_tasks}}
+            <table>
+                <tr><th>Name</th><th>Description</th><th>Begin date</th><th>End date</th></tr>
+                {{#each own_tasks}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.description}}</td>
+                        <td>{{this.begin_date}}</td>
+                        <td>{{this.end_date}}</td>
+                        <td>
+                            <a href="/task/id={{this.id}}">открыть задачу</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        {{else}}
+            <p>Задач нет</p> <br>
+        {{/if}}
+    </div>
+</body>
+</html>

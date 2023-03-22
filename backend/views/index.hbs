@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date base</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<p><h1><a href="/">↻</a> <a href="/main_page">  Начать</a></h1></p>
+<h1>Список пользователей </h1>
+<p><a href="/create_user">Добавить пользователя</a></p>
+<table>
+    <tr><th>ID</th><th>Email</th><th>Password</th><th>Login</th><th>Avatar</th><th>FK_schedule</th></tr>
+    {{#each users1}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.password}}</td>
+            <td>{{this.login}}</td>
+            <td>{{this.avatar}}</td>
+            <td>{{this.FK_schedule}}</td>
+            <td>
+                <a href="/edit_user/{{this.id}}">Edit</a>
+                <form action="delete_user/{{this.id}}" method="POST" style="display:inline;">
+                    <input type="submit" value="Delete" />
+                </form>
+            </td>
+        </tr>
+    {{/each}}
+</table> <br><br>
+<h1>Список задач пользователя</h1>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Description</th><th>Begin date</th><th>End date</th><th>All day</th><th>FK_user</th></tr>
+    {{#each users2}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{this.begin_date}}</td>
+            <td>{{this.end_date}}</td>
+            <td>{{this.all_day}}</td>
+            <td>{{FK_user}}</td>
+        </tr>
+    {{/each}}
+</table> <br><br>
+<h1>Список уведомлений</h1>
+<table>
+    <tr><th>ID</th><th>Date</th>><th>FK_own_tasks</th></tr>
+    {{#each users3}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{date}}</td>
+            <td>{{FK_own_tasks}}</td>
+        </tr>
+    {{/each}}
+</table> <br><br>
+<h1>Список рассписаний</h1>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Description</th><th>Parsing link</th></tr>
+    {{#each users4}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{parsing_link}}</td>
+        </tr>
+    {{/each}}
+</table> <br><br>
+<h1>Список пар</h1>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Description</th><th>Date</th><th>Time number</th><th>FK_schedule</th></tr>
+    {{#each users5}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{description}}</td>
+            <td>{{date}}</td>
+            <td>{{time_number}}</td>
+            <td>{{FK_schedule}}</td>
+        </tr>
+    {{/each}}
+</table> <br><br>
+</body>
+</html>

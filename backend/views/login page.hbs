@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login page</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<style>
+    .centre {
+        text-align: center;
+    }
+</style>
+<h1><a href="/main_page">◀</a></h1> <br><br>
+<div class="centre">
+    <h1>Вход</h1> <br>
+    <form action="/login_page" method="POST">
+        <label> {{message}}</label><br><br>
+        <label>Почта</label><br>
+        <input name="email" class="field" value="{{email}}"/><br>
+        <label>Пароль</label><br>
+        <input type="password" name="password" class="field" /><br><br>
+        <input type="submit" value="Войти" />
+    </form>
+    <a href="/reset_email_page">забыл пароль</a>
+</div>
+</body>
+</html>

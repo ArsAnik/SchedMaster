@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование пользователя</title>
+    <meta charset="utf-8" />
+    <style>.field{width:180px;}</style>
+</head>
+<body>
+<table>
+    <a href="/schedule_page/id={{task.FK_user}}">
+    <h1>◀</h1>
+    </a>  <br><br>
+    <tr><th>ID</th><th>Name</th><th>Description</th><th>Begin date</th><th>End date</th><th>All day</th></tr>
+    <tr>
+        <th> <label>{{task.id}}</label> </th>
+        <th> <label>{{task.name}}</label> </th>
+        <th> <label>{{task.description}}</label> </th>
+        <th><label> {{task.begin_date}} </label></th>
+        <th><label> {{task.end_date}} </label></th>
+        <th><label> {{task.all_day}} </label></th>
+    </tr>
+</table> <br>
+<a href="/edit_task/id={{task_id}}">Редактировать</a>
+</body>
+</html>
