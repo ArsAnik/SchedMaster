@@ -1,11 +1,14 @@
 .header-text-schedule-container{
     background: rgba(153, 51, 204, 0.3);
 }
-.week-days-container{
+
+.shedule-container{
+    position: relative;
     margin: 4% auto;
-    width: 1362px;
+}
+.week-days-container{
     height: 56px;
-    
+    margin: 0 38px;
     display: flex;
     justify-content: space-between;
 }
@@ -35,35 +38,27 @@
     line-height: 15px;
 }
 
-.schedule-table{
-    
-    margin: 0, auto;
-    width: 1362px;
-    height: 56px;
-    
-    background-color: aqua;
-    
-}
+
 .item-time{
-    
+    height: 70px;
+    width: 40px;
+    margin-left: 5px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    text-align: center;
     
 }
 .item-time-container{
-    transform: rotate(-90deg);
+    
+    
 }
-.item-task{
-    position: relative;
-    top: 20%;
-    left: 50%;
+.item-task{ 
     width: 165px;
     height: 90px;
     
-    margin-bottom: 30px;
     
     border-radius: 5px;
     background: rgba(153, 153, 204, 0.3);
@@ -75,7 +70,7 @@
 
 .item-task-name{
     position: relative;
-    top:13%;
+    
     text-align: center;
     
     font-weight: 400;
@@ -84,10 +79,6 @@
 }
 
 .item-task-line{
-    position: relative;
-    top:17%;
-    left:12%;
-    text-align: center;
     
     width: 120px;
     border: 1px solid #FFFFFF;
@@ -104,9 +95,7 @@
 }
 
 .item-balls{
-    position: absolute;
-    top:21%;
-    left: 5%;
+    
     
     width: 2px;
     height: 52px;
@@ -117,9 +106,7 @@
 }
 
 .item-task-time-begin{
-    position: absolute;
-    top: 2%;
-    left: 2%;
+    
     
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -128,9 +115,7 @@
     line-height: 12px;
 }
 .item-task-time-end{
-    position: absolute;
-    bottom: 2%;
-    left: 2%;
+    
     
     font-family: 'Inter',sans-serif;
     font-style: normal;
@@ -139,6 +124,24 @@
     line-height: 12px;
 }
 
-@media (max-width: 1100px) {
-
+@media (max-width: 1352px) {
+    .weekday{
+        
+        width:150px;
+        height: 47px;
+        font-size: 16.8px;
+        line-height: 20.16px;
+    }
 }
+@media (max-width: 1162px) {
+    .weekday{
+        
+        width:126px;
+        height: 39.5px;
+        font-size: 14.1px;
+        line-height: 16.9px;
+    }
+}
+
+
+

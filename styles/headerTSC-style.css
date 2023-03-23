@@ -121,7 +121,7 @@
     text-align: center;
     
     width: 70.2%;
-    height: 32px;
+    height: 100%;
     
     border-radius: 50px;
 }
@@ -170,4 +170,71 @@
 
 .forward-button svg{
     transform: scale(-1,1);
+}
+
+@media(max-width: 1352px) {
+    .header-text{
+        height: 92.4px;
+        margin-bottom: 9px;
+        font-size: 20.16px;
+        line-height: 22.68px;
+    }
+    .header-text-calendar{
+        width: 150px;
+        height: 27px;
+    }
+    .header-text-task{
+        width: 150px;
+        height: 27px;
+        margin-left: 228px;
+    }
+    .header-text-schedule{
+        width: 214.2px;
+        height: 27px;
+    }
+    .open-personalWindow{
+        top: 8.4%;
+        right: 16.8px;
+
+        font-size: 27px;
+        width: 54px;
+        height: 54px;
+    
+    }
+    .arrow-panel{
+        top: 107.5px;
+    }
+}
+@media(max-width: 1162px) {
+    .header-text{
+        height: 78px;
+        margin-bottom: 16px;
+        font-size: 17px;
+        line-height: 19px;
+    }
+    .header-text-calendar{
+        width: 126px;
+        height: 22.68px;
+    }
+    .header-text-task{
+        width: 126px;
+        height: 22.68px;
+        margin-left: 268px;
+    }
+    .header-text-schedule{
+        width: 180px;
+        height: 22.68px;
+    }
+    .open-personalWindow{
+        top: 7%;
+        right: 14.1px;
+
+        font-size: 23px;
+        width: 45px;
+        height: 45px;
+    
+    }
+    .arrow-panel{
+        top: 100px;
+    }
 }
