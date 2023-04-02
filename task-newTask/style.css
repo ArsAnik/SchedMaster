@@ -77,9 +77,12 @@
     display: flex;
     align-items: flex-end;
 }
+
+
 .text-link-color{
     color: #000;
 }
+
 .new-task-description{
     margin: 10% auto;
     margin-bottom: 0;
@@ -164,6 +167,9 @@
 }
 
 @media(max-width:767px){
+    .back-button{
+        display: none; 
+    }
     .new-task{
         max-width: 330px;
         height: 551px;
@@ -180,7 +186,8 @@
         
     }
     .task-description-text:focus{
-        bottom:23%;
+        top: 52%;
+        
     }
     .element-notification-add{
         
