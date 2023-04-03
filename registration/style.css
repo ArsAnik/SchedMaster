@@ -1,0 +1,32 @@
+.registration-image{
+    position: absolute;
+    bottom:0%;
+    right: 0%;
+    
+    
+}
+.registration-window{
+    position: relative;
+    margin: 5% auto;
+    
+    width: 600px;
+    height: 850px;
+
+    
+    background: rgba(153, 153, 204, 0.3);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    
+    font-family: 'Comfortaa', sans-serif;
+}
+.registration-header{
+    width: 264px;
+    height: 40px;
+
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.input-info{
+    
+}
