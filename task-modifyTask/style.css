@@ -7,7 +7,15 @@
     top: 9.7%;
     left: 4.5%;
 }
+.back-button:not(.disabled):hover .arrow-fill{
+    fill: #CC99E5;
+    transition: .2s;
+}
 
+.back-button:not(.disabled):active .arrow-fill{
+    fill: #9933CC;
+    transition: .1s;
+}
 .watch-task{
     position: relative;
     margin: 70px auto;

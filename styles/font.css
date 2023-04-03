@@ -17,6 +17,13 @@
     font-weight: 400;
     src: url(../fonts/static/Comfortaa-Regular.ttf) format("truetype");
 }
+
+@font-face{
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/static/Comfortaa-Medium.ttf) format("truetype");
+}
 @font-face{
     font-family: "Comfortaa";
     font-style: normal;
