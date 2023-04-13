@@ -47,7 +47,7 @@ const weekTime = 7 * dayTime;
                                 users3: data3,
                                 users4: data4,
                                 users5: data5
-                            })
+                            });
                         });
                     });
                 });
