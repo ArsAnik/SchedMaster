@@ -72,9 +72,41 @@ input{
     text-align: center;
 }
 .continue-button{
+    width:394px;
+    height: 56px;
     margin-top:120px;
+    font-size: 30px;
+    line-height: 33px;
 }
-
-
-
+@media(max-width:1000px){
+    .image{
+        width:356px;
+        height: 348px;
+    }
+    .registr-account{
+        width: 316px;
+        height: 450px;
+        margin-top: 13%;
+    }
+    .description-registr{
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .inputs-container{
+        width:240px;
+    }
+    .input-something{
+        width:240px;
+        height: 30px;
+        margin-bottom: 13px;
+    }
+    .continue-button{
+        width: 240px;
+        height: 30px;
+        margin-top:64px;
+        
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
 

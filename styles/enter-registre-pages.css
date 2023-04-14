@@ -1,6 +1,4 @@
 .continue-button{
-    width:394px;
-    height: 56px;
     
     background: #9999CC;
     border: 0.5px solid #9999CC;
@@ -9,8 +7,7 @@
     font-family: 'Comfortaa';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 33px;
+  
     color: #000;
     display: flex;
     justify-content: center;
