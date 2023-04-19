@@ -19,9 +19,8 @@ const pool = mysql.createPool({
 });
 
 const start = async () => {
-    app.listen(3000, function(){
+    app.listen(3001, function(){
         console.log("Сервер ожидает подключения...");
     });
 }
-
 start().then();
