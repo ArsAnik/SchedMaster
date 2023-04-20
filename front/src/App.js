@@ -1,41 +1,99 @@
 import React, {useState, useEffect} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FComponent from "./FComponent";
+import CComponent from "./CComponent";
+import Menu from "./Menu";
+import './style.css'
+import './font.css'
+import logo from './pictures/plus.svg'
+import './headerTSC-style.css'
+import './reset.css'
+import './common.css'
+
+function setDate(d) {
+    return (d.getDay()+1).toString().padStart(2, "0") + '.' +  (d.getMonth()+1).toString().padStart(2, "0")
+}
+
+function setTime(d) {
+    return (d.getHours()).toString().padStart(2, "0") + ':' +  (d.getMinutes()).toString().padStart(2, "0")
+}
 
 function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch('/api/tasksPage/3').
+      const queryParameters = new URLSearchParams(window.location.search)
+      const user_id = queryParameters.get("user_id")
+    fetch(`/api/tasksPage/${user_id}`).
         then(response => response.json()).
         then(response => setData(response.own_tasks));
   }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            {
-                data ? data.map((task) => (
-                    <div>
-                        <p> {task.name} </p>
-                        <p> {task.description} </p>
-                        <p> {task.begin_date} </p>
-                        <p> {task.end_date} </p>
+        <div className="main-container">
+
+            <header className="header">
+                <div className="header-text">
+                    <div className="header-text-task active">
+
+                        <a className="header-text-task-button" href="@">Задачи</a>
+
                     </div>
-                )) : 0
-            }
-        </p>
-          <p>
-              {
-                  //data.own_tasks
-              }
-          </p>
-          <p>
-              {
-                  //data.day
-              }
-          </p>
-      </header>
+
+                    <div className="header-text-schedule">
+                        <div className="header-text-schedule-container">
+
+                            <a className="header-text-schedule-button" href="@">Расписание</a>
+                        </div>
+
+                    </div>
+
+                    <div className="header-text-calendar">
+
+                        <a className="header-text-calendar-button" href="@">Календарь</a>
+
+                    </div>
+
+                </div>
+
+                <a className="open-personalWindow without-avatar" href="@">
+                    <span className="personLetter">Я</span>
+
+                </a>
+
+                <div className="header-line">
+
+                </div>
+            </header>
+
+            <div className="tasks-items">
+
+                {
+                    data ? data.map((task) => (
+                        <a href="@">
+                            <div className="task-item">
+                                <div className="item-time">
+                                    <p className="item-time-data">{setDate(new Date(task.begin_date))}</p>
+                                    <p className="item-time-exact">{setTime(new Date(task.begin_date))}</p>
+                                </div>
+
+                                <div className="item-description">
+                                    <p className="item-description-head"> {task.name} </p>
+                                    <div className="item-description-addition-box">
+                                        <p className="item-description-addition">{task.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    )) : 0
+                }
+
+
+            </div>
+
+            <a className="add-task" href="@">
+                <img src={logo} alt="Добавать задачу"/>
+            </a>
+
+        </div>
     </div>
   );
 }

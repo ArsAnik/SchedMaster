@@ -1,0 +1,48 @@
+body{
+    margin:0;
+}
+
+.main-container{
+    position: absolute;
+    width: 100%;
+    min-height: 100% !important;
+}
+
+.arrow-fill{
+    fill: #AD5CD6;
+}
+
+.arrow-border{
+    stroke: #000;
+    stroke-opacity: 0.1;
+    stroke-width: 3px;
+}
+
+.arrow:not(.disabled):hover .arrow-fill{
+    fill: #CC99E5;
+    transition: .2s;
+}
+
+.arrow:not(.disabled):active .arrow-fill{
+    fill: #9933CC;
+    transition: .1s;
+}
+
+.arrow.disabled{
+    fill: #B5AABB;
+}
+
+.back-button-fill{
+    fill: #9999CC;
+}
+.back-button-border{
+    stroke: #000;
+    stroke-opacity: 0.1;
+    stroke-width: 3px;
+}
+.back-button-svg:not(.disabled):hover .back-button-fill{
+    fill: #8888E5;
+}
+.back-button-svg:not(.disabled):active .back-button-fill{
+    fill: #7B7BE2;
+}
