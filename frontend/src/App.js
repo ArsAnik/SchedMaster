@@ -16,7 +16,8 @@ function App() {
       const queryParameters = new URLSearchParams(window.location.search)
       const user_id = queryParameters.get("user_id")
     fetch(`/api/tasksPage/${user_id}`).
-        then(response => response.json()).then(response => setData(response.own_tasks));
+        then(response => response.json()).
+        then(response => setData(response.own_tasks));
   }, []);
   return (
     <div className="App">
