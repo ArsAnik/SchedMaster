@@ -8,14 +8,7 @@ import logo from './pictures/plus.svg'
 import './headerTSC-style.css'
 import './reset.css'
 import './common.css'
-
-function setDate(d) {
-    return (d.getDay()+1).toString().padStart(2, "0") + '.' +  (d.getMonth()+1).toString().padStart(2, "0")
-}
-
-function setTime(d) {
-    return (d.getHours()).toString().padStart(2, "0") + ':' +  (d.getMinutes()).toString().padStart(2, "0")
-}
+import './myTime'
 
 function App() {
   const [data, setData] = useState(null);
