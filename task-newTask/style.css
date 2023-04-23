@@ -87,7 +87,7 @@
     margin: 10% auto;
     margin-bottom: 0;
     
-    display: flex;
+    
 }
 
 
@@ -108,6 +108,8 @@
     
 }
 .task-description-text{
+    margin-left: 17px;
+    margin-top: 10px;
     resize: none;
     height: 30px;
     outline: none;
@@ -118,15 +120,19 @@
     font-size: 18px;
     line-height: 22px;
     
-    
+    padding-left: 5px;
 }
 .task-description-text:focus{
-    position: absolute;
-    left: 5%;
-    bottom:20%;
-    transform: translate(-50,-50%);
+    
     width: 90%;
     height: 100px;
+    
+    border: 1px solid #9933CC;
+    border-radius: 10px;
+}
+task-description-text:focus{
+    width: 300px;
+    height: 120px;
     
     border: 1px solid #9933CC;
     border-radius: 10px;
