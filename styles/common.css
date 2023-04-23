@@ -32,6 +32,7 @@ body{
     fill: #B5AABB;
 }
 
+<<<<<<< Updated upstream
 .back-button-fill{
     fill: #9999CC;
 }
@@ -45,4 +46,10 @@ body{
 }
 .back-button-svg:not(.disabled):active .back-button-fill{
     fill: #7B7BE2;
+=======
+@media (max-width: 1100px) {
+    .header{
+        position: absolute;
+    }
+>>>>>>> Stashed changes
 }
