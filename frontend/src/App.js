@@ -8,7 +8,7 @@ import logo from './pictures/plus.svg'
 import './headerTSC-style.css'
 import './reset.css'
 import './common.css'
-import './myTime'
+const myTime = require('./myTime');
 
 function App() {
   const [data, setData] = useState(null);
@@ -16,8 +16,7 @@ function App() {
       const queryParameters = new URLSearchParams(window.location.search)
       const user_id = queryParameters.get("user_id")
     fetch(`/api/tasksPage/${user_id}`).
-        then(response => response.json()).
-        then(response => setData(response.own_tasks));
+        then(response => response.json()).then(response => setData(response.own_tasks));
   }, []);
   return (
     <div className="App">
@@ -64,8 +63,8 @@ function App() {
                         <a href="@">
                             <div className="task-item">
                                 <div className="item-time">
-                                    <p className="item-time-data">{setDate(new Date(task.begin_date))}</p>
-                                    <p className="item-time-exact">{setTime(new Date(task.begin_date))}</p>
+                                    <p className="item-time-data">{myTime.getShortDate(new Date(task.begin_date))}</p>
+                                    <p className="item-time-exact">{myTime.getShortTime(new Date(task.begin_date))}</p>
                                 </div>
 
                                 <div className="item-description">
