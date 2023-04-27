@@ -52,7 +52,7 @@
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/backend_v.2/server/package.json" />
+      <package-json value="$PROJECT_DIR$/backend_v.2/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -86,6 +86,12 @@
       <workItem from="1681911760564" duration="12935000" />
       <workItem from="1682258698371" duration="1292000" />
       <workItem from="1682260049052" duration="168000" />
+      <workItem from="1682260648700" duration="8962000" />
+      <workItem from="1682326450431" duration="2045000" />
+      <workItem from="1682491581129" duration="2000" />
+      <workItem from="1682513548230" duration="1000" />
+      <workItem from="1682516584381" duration="8000" />
+      <workItem from="1682518422074" duration="1000" />
     </task>
     <servers />
   </component>

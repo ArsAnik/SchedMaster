@@ -1,6 +1,7 @@
 import React from "react";
+import './headerTSC-style.css'
 
-const taskHeader = () => {
+export default function HeaderComponent(){
     return(
         <header className="header">
             <div className="header-text">
@@ -28,7 +29,7 @@ const taskHeader = () => {
 
             <a className="open-personalWindow without-avatar" href="@">
                 <span className="personLetter">Я</span>
-                <!--<img src="../pictures/meButton.png" alt="аватарка">-->
+
             </a>
 
             <div className="header-line">
@@ -37,5 +38,3 @@ const taskHeader = () => {
         </header>
     )
 }
-
-export default taskHeader;
