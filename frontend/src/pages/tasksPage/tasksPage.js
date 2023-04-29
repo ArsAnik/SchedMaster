@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
-import './ImportantStyles'
+import '../ImportantStyles/font.css'
+import '../ImportantStyles/reset.css'
+import '../ImportantStyles/common.css'
 
 import HeaderComponent from "../../components/TaskComponent/HeaderComponent/HeaderComponent";
 import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";

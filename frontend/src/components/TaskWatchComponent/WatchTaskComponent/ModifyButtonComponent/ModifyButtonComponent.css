@@ -1,0 +1,13 @@
+.modify-button{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.modify-button:hover{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
+
+.modify-button:active{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
