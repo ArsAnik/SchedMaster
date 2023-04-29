@@ -1,14 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-import HeaderComponent from "./HeaderComponent";
-import TaskItemComponent from "./TaskItemComponent";
+import './ImportantStyles'
 
-import './style.css'
-import './font.css'
-import logo from '../../pictures/plus.svg'
-import './headerTSC-style.css'
-import './reset.css'
-import './common.css'
+import HeaderComponent from "../../components/TaskComponent/HeaderComponent/HeaderComponent";
+import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";
+import ButtonComponent from "../../components/TaskComponent/ButtonComponent/ButtonComponent";
 
 const myTime = require('../../utils/myTime');
 
@@ -35,9 +31,7 @@ function TasksPage() {
                 }
             </div>
 
-            <a className="add-task" href="@">
-                <img src={logo} alt="Добавать задачу"/>
-            </a>
+            <ButtonComponent/>
 
         </div>
     </div>

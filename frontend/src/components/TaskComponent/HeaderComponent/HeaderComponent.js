@@ -1,7 +1,8 @@
 import React from "react";
 import './headerTSC-style.css'
+import './HeaderComponent.css'
 
-export default function HeaderComponent(){
+export default function HeaderComponent(props){
     return(
         <header className="header">
             <div className="header-text">

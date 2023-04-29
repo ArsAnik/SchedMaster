@@ -1,4 +1,5 @@
 import React from "react";
+import './TaskItemComponent.css'
 
 export default function TaskItemComponent(props){
     return(
