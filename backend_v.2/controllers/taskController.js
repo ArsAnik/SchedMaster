@@ -8,14 +8,13 @@ const app = express();
 
 class tasksPageController{
 
-    async tasks_page(req, res) {
+    async task_page(req, res) {
         const id = req.params.id;
-        pool.query("SELECT * FROM `own tasks` WHERE `own tasks`.`FK_user`=? ORDER BY `begin_date` ASC", [id], function (err, own_data) {
+        pool.query("SELECT * FROM `own tasks` WHERE id=?", [id], function (err, data) {
             if (err) return console.log(err);
             res.json({
-                id: id,
-                own_tasks: own_data,
-                day: 0
+                task_id: id,
+                data: data
             });
         });
     }
