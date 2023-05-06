@@ -7,14 +7,15 @@ import '../ImportantStyles/common.css'
 import HeaderComponent from "../../components/TaskComponent/HeaderComponent/HeaderComponent";
 import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";
 import ButtonComponent from "../../components/TaskComponent/ButtonComponent/ButtonComponent";
+import {useParams} from "react-router-dom";
 
 const myTime = require('../../utils/myTime');
 
 function TasksPage() {
   const [data, setData] = useState(null);
+  const user_id = useParams().id;
   useEffect(() => {
-      const queryParameters = new URLSearchParams(window.location.search)
-      const user_id = queryParameters.get("user_id")
+
     fetch(`/api/tasksPage/${user_id}`).
         then(response => response.json()).
         then(response => setData(response.own_tasks));
