@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../pictures/plus.svg";
+import logo from "../pictures/plus.svg";
 import './ButtonComponent.css'
 
 export default function ButtonComponent(){

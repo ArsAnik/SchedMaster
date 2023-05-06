@@ -4,9 +4,9 @@ import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 
-import HeaderComponent from "../../components/TaskComponent/HeaderComponent/HeaderComponent";
+import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
 import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";
-import ButtonComponent from "../../components/TaskComponent/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../components/CommonElement/ButtonComponent/ButtonComponent";
 
 const myTime = require('../../utils/myTime');
 

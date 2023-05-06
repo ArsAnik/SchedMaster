@@ -3,7 +3,7 @@ import './NewTaskComponent.css';
 import clock from '../../../pictures/add-task-clock.svg'
 import bell from '../../../pictures/add-task-bell.svg'
 
-import SaveButtonComponent from "../../TaskModifyComponent/WatchTaskComponent/SaveButtonComponent/SaveButtonComponent";
+import SaveButtonComponent from "../../CommonElement/SaveButtonComponent/SaveButtonComponent";
 export default function NewTaskComponent(){
     return(
         <div className="new-task">

@@ -1,6 +1,6 @@
 import React from "react";
 import './WatchTaskComponent.css';
-import ModifyButtonComponent from "./ModifyButtonComponent/ModifyButtonComponent";
+import ModifyButtonComponent from "../ModifyButtonComponent/ModifyButtonComponent";
 export default function WatchTaskComponent(){
     return(
         <div className="watch-task">

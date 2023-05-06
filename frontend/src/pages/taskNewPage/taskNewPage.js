@@ -6,7 +6,7 @@ import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 
 import NewTaskComponent from "../../components/TaskNewComponent/NewTaskComponent/NewTaskComponent";
-import BackButtonComponent from "../../components/TaskModifyComponent/BackButtonComponent/BackButtonComponent";
+import BackButtonComponent from "../../components/CommonElement/BackButtonComponent/BackButtonComponent";
 
 const inputsNTask =(
     <div className="main-container">

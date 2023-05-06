@@ -14,8 +14,8 @@ const pool = mysql.createPool({
     connectionLimit: 5,
     host: "localhost",
     user: "root",
-    database: "Sched-master",
-    password: "fw999111"
+    database: "SchedMaster",
+    password: ""
 });
 
 const start = async () => {

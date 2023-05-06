@@ -1,5 +1,5 @@
 import React from "react";
-import SaveButtonComponent from "./SaveButtonComponent/SaveButtonComponent";
+import SaveButtonComponent from "../../CommonElement/SaveButtonComponent/SaveButtonComponent";
 import './WatchTaskComponent.css';
 
 export default function WatchTaskComponent(){

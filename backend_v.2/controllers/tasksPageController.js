@@ -7,8 +7,8 @@ const pool = mysql.createPool({
     connectionLimit: 5,
     host: "localhost",
     user: "root",
-    database: "Sched-master",
-    password: "fw999111"
+    database: "SchedMaster",
+    password: ""
 });
 
 function setDateFunction() {  // функция, которая выводит примерную дату начала семестра (для работы с недельными рассписаниями пар)
