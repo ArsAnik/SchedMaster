@@ -1,13 +1,13 @@
 import React from "react";
 import './WatchTaskComponent.css';
 import ModifyButtonComponent from "../ModifyButtonComponent/ModifyButtonComponent";
-export default function WatchTaskComponent(){
+export default function WatchTaskComponent(props){
     return(
         <div className="watch-task">
 
             <div className="task-header">
 
-                Наглаживание кота
+                {props.name}
 
             </div>
 
@@ -16,9 +16,11 @@ export default function WatchTaskComponent(){
 
                 <div className="additional-information">
 
-                    <div className="information-data">15.02.2023</div>
-                    <div className="information-time">20:00 - 21:00</div>
-
+                    <div className="information-data">{props.date_begin}</div>
+                    <div className="information-data">{props.time_begin}</div>
+                    <span> - </span>
+                    <div className="information-time">{props.date_end}</div>
+                    <div className="information-time">{props.time_end}</div>
 
                 </div>
                 <div className="additional-remembering">
@@ -38,9 +40,9 @@ export default function WatchTaskComponent(){
 
             <div className="task-description">
 
-                <div className="description-header"><span>Описание Задачи:</span></div>
-                <div className="description-text">Погладь кота! Нет сам погладь кота! Да не хочу я гладить кота! А ты
-                    должен его гладить!!!!
+                <div className="description-header"><span>Описание задачи:</span></div>
+                <div className="description-text">
+                    {props.description}
                 </div>
 
             </div>

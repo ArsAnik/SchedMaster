@@ -1,10 +1,11 @@
 import React from "react";
-import './BackButtonComponent.css'
+import './BackButtonComponent.css';
+import {TASKS_PAGE} from "../../../utils/consts";
 
 export default function BackButtonComponent(){
     return(
         <div className="back-button">
-            <a href="@">
+            <a href={TASKS_PAGE}>
                 <svg className="arrow" width="53" height="58" viewBox="0 0 53 58" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path className="arrow-fill"

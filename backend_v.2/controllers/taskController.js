@@ -12,10 +12,9 @@ class tasksPageController{
         const id = req.params.id;
         pool.query("SELECT * FROM `own tasks` WHERE id=?", [id], function (err, data) {
             if (err) return console.log(err);
-            res.json({
-                task_id: id,
-                data: data
-            });
+            res.json(
+                {data: data[0]}
+            );
         });
     }
 }

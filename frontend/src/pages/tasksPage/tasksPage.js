@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {TASK_WATCH_PAGE} from "../../utils/consts";
 
 import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
@@ -6,14 +7,13 @@ import '../ImportantStyles/common.css'
 
 import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
 import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";
-import ButtonComponent from "../../components/TaskComponent/ButtonComponent/ButtonComponent";
-import {useParams} from "react-router-dom";
+import ButtonComponent from "../../components/CommonElement/ButtonComponent/ButtonComponent";
 
 const myTime = require('../../utils/myTime');
 
 function TasksPage() {
   const [data, setData] = useState(null);
-  const user_id = useParams().id;
+  const user_id = 3;
   useEffect(() => {
 
     fetch(`/api/tasksPage/${user_id}`).
@@ -21,7 +21,6 @@ function TasksPage() {
         then(response => setData(response.own_tasks));
   }, []);
   return (
-    <div className="App">
         <div className="main-container">
 
             <HeaderComponent />
@@ -29,63 +28,19 @@ function TasksPage() {
             <div className="tasks-items">
                 {
                     data ? data.map((task) => (
-                        <TaskItemComponent date={myTime.getShortDate(new Date(task.begin_date))} time={myTime.getShortTime(new Date(task.begin_date))} description={task.description} additionalData={task.name}/>
-                    )) : 0
+                        <TaskItemComponent
+                            link={TASK_WATCH_PAGE + task.id}
+                            date={myTime.getShortDate(new Date(task.begin_date))}
+                            time={myTime.getShortTime(new Date(task.begin_date))}
+                            description={task.description}
+                            additionalData={task.name}
+                        />
+                    )) : ''
                 }
             </div>
 
             <ButtonComponent/>
-
         </div>
-    </div>
   );
 }
 export default TasksPage;
-
-// import React, {useState, useEffect} from 'react';
-//
-// import HeaderComponent from "./pages/tasksPage/HeaderComponent";
-// import TaskItemComponent from "./pages/tasksPage/TaskItemComponent";
-//
-// import './pages/tasksPage/style.css'
-// import './pages/tasksPage/font.css'
-// import logo from './pictures/plus.svg'
-// import './pages/tasksPage/headerTSC-style.css'
-// import './pages/tasksPage/reset.css'
-// import './pages/tasksPage/common.css'
-//
-// const myTime = require('./utils/myTime');
-//
-// function App() {
-//   const [data, setData] = useState(null);
-//   useEffect(() => {
-//       const queryParameters = new URLSearchParams(window.location.search)
-//       const user_id = queryParameters.get("user_id")
-//     fetch(`/api/tasksPage/${user_id}`).
-//         then(response => response.json()).
-//         then(response => setData(response.own_tasks));
-//   }, []);
-//   return (
-//     <div className="App">
-//         <div className="main-container">
-//
-//             <HeaderComponent />
-//
-//             <div className="tasks-items">
-//                 {
-//                     data ? data.map((task) => (
-//                         <TaskItemComponent date={myTime.getShortDate(new Date(task.begin_date))} time={myTime.getShortTime(new Date(task.begin_date))} description={task.description} additionalData={task.name}/>
-//                     )) : 0
-//                 }
-//             </div>
-//
-//             <a className="add-task" href="@">
-//                 <img src={logo} alt="Добавать задачу"/>
-//             </a>
-//
-//         </div>
-//     </div>
-//   );
-// }
-//
-// export default App;

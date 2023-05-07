@@ -3,7 +3,7 @@ import './TaskItemComponent.css'
 
 export default function TaskItemComponent(props){
     return(
-        <a href="@">
+        <a href={props.link}>
             <div className="task-item">
                 <div className="item-time">
                     <p className="item-time-data">{props.date}</p>
