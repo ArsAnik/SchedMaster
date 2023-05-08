@@ -1,0 +1,7 @@
+запросы на сервере бекэнда: (в ссылках поставлены пробелы для читабельности. Так то их там не должно быть)
+
+get     '/api/tasksPage ?id=0'          запрос задач пользователя
+get     'api/task ?id=0'                открыть или редактировать задачу
+post    'api/task/create'               создать задачу. Нужно отправить {name, description, begin_date, end_date, all_day, FK_user}
+post    'api/task/edit ?id=0'           изменить задачу. Нужно отправить {name, description, begin_date, end_date, all_day}
+delete  'api/task ?id=0'                удалить задачу
