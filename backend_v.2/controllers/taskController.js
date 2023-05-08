@@ -11,7 +11,11 @@ class tasksPageController{
     async task_get(req, res) {
         const {id} = req.query;
         pool.query("SELECT * FROM `own tasks` WHERE id=?", [id], function (err, data) {
-            if (err) return console.log(err);
+            if (err) return
+            res.json({
+                err: err,
+                message: "bad"
+            });
             res.json({
                 data: data
             });
@@ -25,9 +29,7 @@ class tasksPageController{
                 err: err,
                 message: "bad"
             });
-            return res.json({
-                message: "good"
-            })
+            return res.json();
         });
     }
 
@@ -38,9 +40,7 @@ class tasksPageController{
                 err: err,
                 message: "bad"
             });
-            return res.json({
-                message: "good"
-            })
+            return res.json();
         });
     }
     async task_delete(req, res) {
@@ -50,9 +50,7 @@ class tasksPageController{
                 err: err,
                 message: "bad"
             });
-            return res.json({
-                message: "good"
-            })
+            return res.json();
         });
     }
 }

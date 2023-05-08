@@ -11,11 +11,13 @@ class tasksPageController{
     async tasks_page(req, res) {
         const {id} = req.query;
         pool.query("SELECT * FROM `own tasks` WHERE `own tasks`.`FK_user`=? ORDER BY `begin_date` ASC", [id], function (err, own_data) {
-            if (err) return console.log(err);
+            if (err) return
             res.json({
-                id: id,
-                own_tasks: own_data,
-                day: 0
+                err: err,
+                message: "bad"
+            });
+            res.json({
+                own_tasks: own_data
             });
         });
     }
