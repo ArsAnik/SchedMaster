@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './WatchTaskComponent.css';
 import ModifyButtonComponent from "../ModifyButtonComponent/ModifyButtonComponent";
+import DeleteButtonComponent from "../DeleteButtonComponent/DeleteButtonComponent";
 export default function WatchTaskComponent(props){
     return(
         <div className="watch-task">
@@ -48,6 +49,7 @@ export default function WatchTaskComponent(props){
             </div>
 
             <ModifyButtonComponent/>
+            <DeleteButtonComponent/>
 
         </div>
     )

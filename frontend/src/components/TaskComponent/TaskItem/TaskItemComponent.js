@@ -11,7 +11,7 @@ export default function TaskItemComponent(props){
                 </div>
 
                 <div className="item-description">
-                    <p className="item-description-head">{props.description} </p>
+                    <p className="item-description-head">{props.name} </p>
                     <p className="item-description-addition">{props.additionalData}</p>
                 </div>
             </div>

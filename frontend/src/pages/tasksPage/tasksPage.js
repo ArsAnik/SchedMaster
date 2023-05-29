@@ -32,8 +32,8 @@ function TasksPage() {
                             link={TASK_WATCH_PAGE + task.id}
                             date={myTime.getShortDate(new Date(task.begin_date))}
                             time={myTime.getShortTime(new Date(task.begin_date))}
-                            description={task.description}
-                            additionalData={task.name}
+                            name={task.name}
+                            additionalData={task.description}
                         />
                     )) : ''
                 }

@@ -20,14 +20,9 @@ const weekTime = 7 * dayTime;
 class tasksPageController{
 
     async tasks_page(req, res) {
-        const {id} = req.query;
+        let id = req.params.id;
         pool.query("SELECT * FROM `own tasks` WHERE `own tasks`.`FK_user`=? ORDER BY `begin_date` ASC", [id], function (err, own_data) {
-            if (err) return
-            res.json({
-                err: err,
-                message: "bad"
-            });
-            res.json({
+            if (!err) return res.json({
                 own_tasks: own_data
             });
         });

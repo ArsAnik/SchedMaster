@@ -8,9 +8,10 @@ export default function NewTaskComponent(){
     return(
         <div className="new-task">
 
+            <form>
             <div className="task-header">
 
-                <form><input placeholder="Введите название" className="task-header-input"/></form>
+                <input placeholder="Введите название" className="task-header-input"/>
 
             </div>
 
@@ -59,12 +60,11 @@ export default function NewTaskComponent(){
 
 
                 <div>
-                    <form>
-                        <textarea className="task-description-text" placeholder="добавьте описание"></textarea>
-                    </form>
+                    <textarea className="task-description-text" placeholder="добавьте описание"></textarea>
                 </div>
 
             </div>
+            </form>
 
             <SaveButtonComponent/>
 

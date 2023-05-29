@@ -5,7 +5,7 @@ export default function ModifyButtonComponent(){
     return(
         <div className="modify-button">
 
-            <a href="@"><img src={stylus}/></a>
+            <a href="#"><img src={stylus}/></a>
 
         </div>
     )

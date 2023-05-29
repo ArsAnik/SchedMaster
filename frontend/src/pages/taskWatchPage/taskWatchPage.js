@@ -10,14 +10,15 @@ import BackButtonComponent from "../../components/CommonElement/BackButtonCompon
 import WatchTaskComponent from "../../components/TaskWatchComponent/WatchTaskComponent/WatchTaskComponent";
 import myTime from "../../utils/myTime";
 
-function TaskWatch() {
+export const TaskWatch = () => {
+
     const [data, setData] = useState(null);
     const task_id = useParams().id;
-    useEffect(() => {
 
+    useEffect(() => {
         fetch(`/api/task/${task_id}`).
         then(response => response.json()).
-        then(response => setData(response.data));
+        then(response => setData(response.data[0]));
     }, []);
     return (
         <div className="main-container">
@@ -25,6 +26,7 @@ function TaskWatch() {
             <BackButtonComponent/>
             {data ?
             <WatchTaskComponent
+                id={data.id}
                 name={data.name}
                 date_begin={myTime.getShortDate(new Date(data.begin_date))}
                 date_end={myTime.getShortDate(new Date(data.end_date))}
