@@ -11,6 +11,7 @@ app.use('/api', router);
 
 const start = async () => {
     app.listen(3001, function(){
+        console.log("Сервер ожидает подключения...");
     });
 }
 start().then();
