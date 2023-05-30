@@ -174,7 +174,7 @@ task-description-text:focus{
 
 @media(max-width:767px){
     .back-button{
-        display: none; 
+         
     }
     .new-task{
         max-width: 330px;
