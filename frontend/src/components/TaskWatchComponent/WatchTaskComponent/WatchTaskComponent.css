@@ -8,7 +8,7 @@
     border-radius: 20px;
 }
 
-.task-header{
+.watch-task .task-header{
     position: absolute;
     width: 410px;
     height: 49px;
@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -28,65 +28,63 @@
     text-transform: capitalize;
 }
 
-.task-header-underline{
+.watch-task .task-header-underline{
 
-    margin: 0 auto;
-    margin-top: 10%;
+    margin: 10% auto 0 auto;
     width: 559px;
-    height: 0px;
+    height: 0;
     border: 1px solid #000000;
 }
 
-.task-additional{
-    margin: 0 auto;
-    margin-top: 1%;
+.watch-task .task-additional{
+    margin: 1% auto 0 auto;
     width: 255px;
     height: 72px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
 }
 
-.additional-information{
+.watch-task .additional-information{
     display: flex;
     align-items: center;
     justify-content:flex-end;
 }
-.information-data{
+.watch-task .information-data{
     margin-right: 7%;
 }
 
-.additional-remembering{
+.watch-task .additional-remembering{
     display: flex;
     align-items:flex-start;
     justify-content:flex-end;
 }
-.remembering-word{
+.watch-task .remembering-word{
     margin-right: 3%;
 }
 
-.remembering-times{
+.watch-task .remembering-times{
     text-align: end;
 }
-.remembering-time span{
-    font-family: 'Montserrat';
+.watch-task .remembering-time span{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.task-description{
+.watch-task .task-description{
     margin-top: 3%;
     margin-left: 9%;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
-.description-header{
+.watch-task .description-header{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 }
-.description-text{
+.watch-task .description-text{
     width: 774px;
 
     display: flex;
