@@ -1,5 +1,4 @@
 import React from "react";
-import SaveButtonComponent from "../CommonElement/SaveButtonComponent/SaveButtonComponent";
 import './EditTaskComponent.css';
 
 export default function EditTaskComponent(props){
@@ -53,8 +52,6 @@ export default function EditTaskComponent(props){
                 </form>
 
             </div>
-
-            <SaveButtonComponent id={props.id}/>
 
         </div>
     )

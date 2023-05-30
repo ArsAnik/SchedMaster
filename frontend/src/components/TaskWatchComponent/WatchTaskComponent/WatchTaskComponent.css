@@ -25,7 +25,6 @@
     display: flex;
     align-items: center;
     text-align: justify;
-    text-transform: capitalize;
 }
 
 .watch-task .task-header-underline{
