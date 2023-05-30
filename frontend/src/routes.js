@@ -4,6 +4,7 @@ import TaskWatch from "./pages/taskWatchPage/taskWatchPage";
 import Error404Page from "./pages/error404Page/error404Page";
 import taskNewPage from "./pages/taskNewPage/taskNewPage";
 import taskEditPage from "./pages/taskEditPage/taskEditPage";
+import registration from "./pages/registration/registration";
 
 export const allRoutes = [
     {
@@ -25,5 +26,9 @@ export const allRoutes = [
     {
         path: pages.TASK_EDIT_PAGE + ':id',
         Component: taskEditPage
+    },
+    {
+        path: pages.REGISTRATION,
+        Component: registration
     }
 ]
