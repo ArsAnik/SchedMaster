@@ -15,7 +15,6 @@ export default function NewTaskComponent(){
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(JSON.stringify({ name, description, begin_date, end_date, all_day, FK_user}));
         await fetch('/api/task/create', {
             method: 'POST',
             headers: {

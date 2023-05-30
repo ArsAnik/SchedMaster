@@ -42,7 +42,12 @@ class userController{
             } else {
                 pool.query("INSERT INTO `user` (`email`, `password`, `login`) VALUES (?,?,?)", [email, password, login], function (err, data) {
                     if (err) return console.log(err);
-                    return res.json();
+                    pool.query("SELECT id FROM user WHERE email=?", [email], function (err, data) {
+                        if (err) return console.log(err);
+                        return res.json({
+                            id:data[0].id
+                        });
+                    });
                 });
             }
         });

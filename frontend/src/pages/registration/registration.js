@@ -1,11 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 import './registration.css'
+import {useNavigate} from "react-router-dom";
 
 function Registration() {
+    const navigate = useNavigate();
+
+    const [email, setEmail] = useState('');
+    const [login, setLogin] = useState('');
+    const [password, setPassword] = useState('');
+    const [password2, setPassword2] = useState('');
+    const [id, setId] = useState('');
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        console.log(email, login, password, password2);
+        await fetch('/api/user/create', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, login, password})
+        }).then(response => response.json()).
+        then(response => setId(response.id));
+        navigate(`/tasksPage/${id}`);
+    };
     return (
         <div className="main-container">
 
@@ -29,18 +51,48 @@ function Registration() {
             <div className="registr-account">
 
                 <div className="description-registr">Регистрация</div>
+                <form onSubmit={handleSubmit}>
+                    <div className="inputs-container">
 
-                <div className="inputs-container">
-
-                    <div className="input-something"><input placeholder="введите вашу почту"/></div>
-                    <div className="input-something"><input placeholder="логин"/></div>
-                    <div className="input-something"><input placeholder="пароль"/></div>
-                    <div className="input-something"><input placeholder="повторите пароль"/></div>
-
-                    <a href="@" className="next-button-container">
-                        <div className="continue-button">Далее</div>
-                    </a>
-                </div>
+                        <div className="input-something">
+                            <input
+                                placeholder="введите вашу почту"
+                                className="task-header-input"
+                                value={email}
+                                onChange={(event) => setEmail(event.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-something">
+                            <input
+                                placeholder="логин"
+                                className="task-header-input"
+                                value={login}
+                                onChange={(event) => setLogin(event.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-something">
+                            <input
+                                placeholder="пароль"
+                                className="task-header-input"
+                                value={password}
+                                onChange={(event) => setPassword(event.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="input-something">
+                            <input
+                                placeholder="повторите пароль"
+                                className="task-header-input"
+                                value={password2}
+                                onChange={(event) => setPassword2(event.target.value)}
+                                required
+                            />
+                        </div>
+                    </div>
+                    <button className="save-button" type="submit">Сохранить</button>
+                </form>
 
             </div>
 
