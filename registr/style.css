@@ -1,15 +1,15 @@
-.image{
+.header-registre .image{
     position: absolute;
     bottom: 0;
     right: 0;
 }
-.back-button-svg{
+.header-registre .back-button-svg{
     position: absolute;
     top: 4%;
     left: 3%;
 }
 
-.person-account-link{
+.header-registre .person-account-link{
     position: absolute;
     top: 5%;
     right: 6%;
@@ -29,7 +29,7 @@
     border: 0.1px solid rgba(153, 153, 204, 0.3);
 
 }
-.description-registr{
+.registr-account .description-registr{
     position: relative;
     
     width: 263px;
@@ -45,13 +45,13 @@
     line-height: 40px;
     text-align: center;
 }
-.inputs-container{
+.registr-account .inputs-container{
     width:394px;
     height: 500px;
     
     margin: 0 auto;
 }
-.input-something{
+.registr-account .input-something{
     width:394px;
     height: 56px;
     margin-bottom: 32px;
@@ -61,7 +61,7 @@
     border-radius: 20px;
     
 }
-input[placeholder]{
+.registr-account input[placeholder]{
     width:100%;
     padding: 17px;
     font-family: 'Comfortaa';
@@ -71,7 +71,7 @@ input[placeholder]{
     line-height: 22px;
     text-align: center;
 }
-.continue-button{
+.registr-account .continue-button{
     width:394px;
     height: 56px;
     margin-top:120px;
@@ -79,16 +79,16 @@ input[placeholder]{
     line-height: 33px;
 }
 @media(max-width:1000px){
-    .image{
+    .header-registre .image{
         width:356px;
         height: 348px;
     }
-    .back-button-svg{
+    .header-registre .back-button-svg{
         top: 15%;
         left: 13%;
         transform: translate(-50%,-50%);
     }
-    .person-account-link{
+    .header-registre .person-account-link{
         top: 14%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -98,19 +98,19 @@ input[placeholder]{
         height: 450px;
         margin: 50% auto;
     }
-    .description-registr{
+    .registr-account .description-registr{
         font-size: 26px;
         line-height: 29px;
     }
-    .inputs-container{
+    .registr-account .inputs-container{
         width:240px;
     }
-    .input-something{
+    .registr-account .input-something{
         width:240px;
         height: 30px;
         margin-bottom: 13px;
     }
-    .continue-button{
+    .registr-account .continue-button{
         width: 240px;
         height: 30px;
         margin-top:34px;
@@ -118,7 +118,7 @@ input[placeholder]{
         font-size: 18px;
         line-height: 20px;
     }
-    input[placeholder]{
+    .registr-account input[placeholder]{
         padding: 7px;
         font-size: 14px;
         line-height: 16px;

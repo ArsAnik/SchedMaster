@@ -1,15 +1,15 @@
-.image{
+.header-enter .image{
     position: absolute;
     bottom: 0;
     right: 0;
 }
-.back-button-svg{
+.header-enter .back-button-svg{
     position: absolute;
     top: 4%;
     left: 3%;
 }
 
-.person-account-link{
+.header-enter .person-account-link{
     position: absolute;
     top: 5%;
     right: 6%;
@@ -26,7 +26,7 @@
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
 }
-.description-enter{
+.enter-window .description-enter{
     position: relative;
     
     width: 263px;
@@ -42,13 +42,13 @@
     line-height: 40px;
     text-align: center;
 }
-.inputs-container{
+.enter-window .inputs-container{
     width:394px;
     height: 500px;
     
     margin: 0 auto;
 }
-.input-something{
+.enter-window .input-something{
     width:394px;
     height: 56px;
     margin-bottom: 32px;
@@ -58,7 +58,7 @@
     border-radius: 20px;
     
 }
-input[placeholder]{
+.enter-window input[placeholder]{
     width:100%;
     padding: 17px;
     font-family: 'Comfortaa';
@@ -70,11 +70,11 @@ input[placeholder]{
     text-align: center;
 }
 
-.continue-button{
+.enter-window .continue-button{
     margin-top:200px;
 }
 
-.forget-password{
+.enter-window .forget-password{
     width: 120px;
     height: 18px;
     
@@ -87,12 +87,12 @@ input[placeholder]{
     
     margin: 15px auto;
 }
-.forget-password-link{
+.enter-window .forget-password-link{
     width: 100%;
     height: 100%;
     color: rgba(0, 0, 0, 0.6);
 }
-.continue-button{
+.enter-window .continue-button{
     width: 394px;
     height: 56px;
     background: #9999CC;
@@ -111,24 +111,24 @@ input[placeholder]{
     align-items: center;
 }
 
-.continue-button:hover{
+.enter-window .continue-button:hover{
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-.continue-button:active{
+.enter-window .continue-button:active{
     box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 @media(max-width:1000px){
-    .image{
+    .header-enter .image{
         width:356px;
         height: 348px;
     }
-    .back-button-svg{
+    .header-enter .back-button-svg{
         top: 15%;
         left: 13%;
         transform: translate(-50%,-50%);
     }
-    .person-account-link{
+    .header-enter .person-account-link{
         top: 14%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -138,19 +138,19 @@ input[placeholder]{
         height: 450px;
         margin: 50% auto;
     }
-    .description-enter{
+    .enter-window .description-enter{
         font-size: 26px;
         line-height: 29px;
     }
-    .inputs-container{
+    .enter-window .inputs-container{
         width:240px;
     }
-    .input-something{
+    .enter-window .input-something{
         width:240px;
         height: 30px;
         margin-bottom: 13px;
     }
-    .continue-button{
+    .enter-window .continue-button{
         width: 240px;
         height: 30px;
         margin-top:64px;
@@ -158,14 +158,14 @@ input[placeholder]{
         font-size: 18px;
         line-height: 20px;
     }
-    .forget-password{
+    .enter-window .forget-password{
         width: 76px;
         height: 11px;
         
         font-size: 10px;
         line-height: 11px;
     }
-    input[placeholder]{
+    .enter-window input[placeholder]{
         padding: 7px;
         font-size: 14px;
         line-height: 16px;
