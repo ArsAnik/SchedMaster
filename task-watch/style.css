@@ -19,12 +19,10 @@
 }
 
 .task-header{
-    position: absolute;
-    width: 410px;
+    margin: 5.6% auto 0 auto;
+    width: 558px;
     height: 49px;
-    top: 10.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+   
     
     font-family: 'Montserrat';
     font-style: normal;
@@ -32,16 +30,12 @@
     font-size: 40px;
     line-height: 49px;
     
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    text-transform: capitalize;
+    text-align: center;
 }
 
 .task-header-underline{
   
-    margin: 0 auto;
-    margin-top: 10%;
+    margin: 0 auto 0 auto;
     width: 559px;
     height: 0px;
     border: 1px solid #000000;
@@ -49,7 +43,7 @@
 
 .task-additional{
     margin: 0 auto;
-    margin-top: 1%;
+    margin-top: 1.7%;
     width: 255px;
     height: 72px;
     
@@ -107,6 +101,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    
 }
 .modify-button{
     position: absolute;
