@@ -2,6 +2,8 @@ import * as pages from "./utils/consts";
 import TasksPage from "./pages/tasksPage/tasksPage";
 import TaskWatch from "./pages/taskWatchPage/taskWatchPage";
 import Error404Page from "./pages/error404Page/error404Page";
+import taskNewPage from "./pages/taskNewPage/taskNewPage";
+import taskEditPage from "./pages/taskEditPage/taskEditPage";
 
 export const allRoutes = [
     {
@@ -15,5 +17,13 @@ export const allRoutes = [
     {
         path: pages.ERROR_404_PAGE,
         Component: Error404Page
+    },
+    {
+        path: pages.TASK_NEW_PAGE,
+        Component: taskNewPage
+    },
+    {
+        path: pages.TASK_EDIT_PAGE + ':id',
+        Component: taskEditPage
     }
 ]

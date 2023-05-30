@@ -7,13 +7,15 @@ import '../ImportantStyles/common.css'
 
 import NewTaskComponent from "../../components/TaskNewComponent/NewTaskComponent/NewTaskComponent";
 import BackButtonComponent from "../../components/CommonElement/BackButtonComponent/BackButtonComponent";
+import TasksPage from "../tasksPage/tasksPage";
 
-const inputsNTask =(
-    <div className="main-container">
-        <NewTaskComponent/>
-        <BackButtonComponent/>
-    </div>
-)
+function TasksNewPage() {
+    return (
+        <div className="main-container">
+            <NewTaskComponent/>
+            <BackButtonComponent/>
+        </div>
+    );
+}
 
-const index = document.getElementById("root")
-ReactDOM.render(inputsNTask, index);
+export default TasksNewPage;

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20a831b9-e4b4-4145-95fb-71c38991c81a" name="Changes" comment="" />
+    <list default="true" id="20a831b9-e4b4-4145-95fb-71c38991c81a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HeaderComponent/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/HeaderComponent/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskModifyComponent/WatchTaskComponent/WatchTaskComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskEditComponent/EditTaskComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskModifyComponent/WatchTaskComponent/WatchTaskComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskEditComponent/EditTaskComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/DeleteButtonComponent/DeleteButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/DeleteButtonComponent/DeleteButtonComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/ModifyButtonComponent/ModifyButtonComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/ModifyButtonComponent/ModifyButtonComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/WatchTaskComponent/WatchTaskComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskWatchComponent/WatchTaskComponent/WatchTaskComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/error404Page/error404Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/error404Page/error404Page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/taskModifyPage/taskModifyPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/taskEditPage/taskEditPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/taskNewPage/taskNewPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/taskNewPage/taskNewPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/taskWatchPage/taskWatchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/taskWatchPage/taskWatchPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/tasksPage/tasksPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/tasksPage/tasksPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/важные вещи" beforeDir="false" afterPath="$PROJECT_DIR$/важные вещи" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,22 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Папка/Проекты/github/sched-master/SchedMaster/backend_v.2/server/controllers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/arsan/OneDrive/Документы/GitHub/SchedMaster/frontend/src/components/TaskEditComponent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arsan\OneDrive\Документы\GitHub\SchedMaster\frontend\src\components\TaskEditComponent" />
       <recent name="C:\Users\User\Desktop\Папка\Проекты\github\sched-master\SchedMaster\backend_v.2\server\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -54,7 +72,7 @@
       <recent name="C:\Users\User\Desktop\Папка\Проекты\github\sched-master\SchedMaster\front\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/backend_v.2/package.json" />
       <command value="run" />
@@ -65,6 +83,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.dev" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
@@ -98,6 +130,8 @@
       <workItem from="1682518422074" duration="1000" />
       <workItem from="1682654604007" duration="9320000" />
       <workItem from="1685378914362" duration="4647000" />
+      <workItem from="1685432702160" duration="3182000" />
+      <workItem from="1685457245649" duration="13008000" />
     </task>
     <servers />
   </component>

@@ -1,15 +1,15 @@
 import React from "react";
-import SaveButtonComponent from "../../CommonElement/SaveButtonComponent/SaveButtonComponent";
-import './WatchTaskComponent.css';
+import SaveButtonComponent from "../CommonElement/SaveButtonComponent/SaveButtonComponent";
+import './EditTaskComponent.css';
 
-export default function WatchTaskComponent(){
+export default function EditTaskComponent(props){
     return(
         <div className="watch-task">
 
             <form>
                 <div className="task-header">
 
-                    <input type="text" value="Наглаживание кота" className="header-modify"/>
+                    <input type="text" value={props.name} className="header-modify"/>
 
                 </div>
             </form>
@@ -48,13 +48,13 @@ export default function WatchTaskComponent(){
 
                 <div className="description-header"><span>Описание Задачи:</span></div>
                 <form>
-                    <div className="description-text"><textarea className="description-text-modify">Погладь кота! Нет сам погладь кота! Да не хочу я гладить кота! А ты должен его гладить!!!!</textarea>
+                    <div className="description-text"><textarea className="description-text-modify">{props.description}</textarea>
                     </div>
                 </form>
 
             </div>
 
-            <SaveButtonComponent/>
+            <SaveButtonComponent id={props.id}/>
 
         </div>
     )

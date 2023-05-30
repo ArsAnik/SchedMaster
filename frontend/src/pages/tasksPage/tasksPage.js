@@ -13,9 +13,8 @@ const myTime = require('../../utils/myTime');
 
 function TasksPage() {
   const [data, setData] = useState(null);
-  const user_id = 3;
+  const user_id = 5;
   useEffect(() => {
-
     fetch(`/api/tasksPage/${user_id}`).
         then(response => response.json()).
         then(response => setData(response.own_tasks));
@@ -39,7 +38,7 @@ function TasksPage() {
                 }
             </div>
 
-            <ButtonComponent/>
+            <ButtonComponent link={"/task/create/"}/>
         </div>
   );
 }
