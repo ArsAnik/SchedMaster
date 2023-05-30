@@ -58,7 +58,7 @@
     border-radius: 20px;
     
 }
-input{
+input[placeholder]{
     width:100%;
     padding: 17px;
     font-family: 'Comfortaa';
@@ -92,8 +92,86 @@ input{
     height: 100%;
     color: rgba(0, 0, 0, 0.6);
 }
+.continue-button{
+    width: 394px;
+    height: 56px;
+    background: #9999CC;
+    border: 0.5px solid #9999CC;
+    border-radius: 20px;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.continue-button:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.continue-button:active{
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
 
+@media(max-width:1000px){
+    .image{
+        width:356px;
+        height: 348px;
+    }
+    .back-button-svg{
+        top: 15%;
+        left: 13%;
+        transform: translate(-50%,-50%);
+    }
+    .person-account-link{
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .enter-window{
+        width: 316px;
+        height: 450px;
+        margin: 50% auto;
+    }
+    .description-enter{
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .inputs-container{
+        width:240px;
+    }
+    .input-something{
+        width:240px;
+        height: 30px;
+        margin-bottom: 13px;
+    }
+    .continue-button{
+        width: 240px;
+        height: 30px;
+        margin-top:64px;
+        
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .forget-password{
+        width: 76px;
+        height: 11px;
+        
+        font-size: 10px;
+        line-height: 11px;
+    }
+    input[placeholder]{
+        padding: 7px;
+        font-size: 14px;
+        line-height: 16px;
+        
+    }
+}
 
 
 

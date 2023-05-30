@@ -61,7 +61,7 @@
     border-radius: 20px;
     
 }
-input{
+input[placeholder]{
     width:100%;
     padding: 17px;
     font-family: 'Comfortaa';
@@ -83,10 +83,20 @@ input{
         width:356px;
         height: 348px;
     }
+    .back-button-svg{
+        top: 15%;
+        left: 13%;
+        transform: translate(-50%,-50%);
+    }
+    .person-account-link{
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     .registr-account{
         width: 316px;
         height: 450px;
-        margin-top: 13%;
+        margin: 50% auto;
     }
     .description-registr{
         font-size: 26px;
@@ -103,10 +113,15 @@ input{
     .continue-button{
         width: 240px;
         height: 30px;
-        margin-top:64px;
+        margin-top:34px;
         
         font-size: 18px;
         line-height: 20px;
+    }
+    input[placeholder]{
+        padding: 7px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
