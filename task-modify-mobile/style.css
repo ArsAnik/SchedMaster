@@ -1,5 +1,4 @@
-
-.header-task{
+.header-edit-mobile .header-task{
     width: 180px;
     height: 32px;
     margin: 7.8% auto 0 auto;
@@ -13,19 +12,209 @@
     background: rgba(153, 51, 204, 0.1);
     border-radius: 50px;
     padding-top: 4px;
-}
-
-.header-task-href{
-    width: 100%;
     color: #000;
 }
+.header-edit-mobile .header-task-link{
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    color:#000;
+}
+.header-edit-mobile .header-task:active{
+    background: rgba(153, 51, 204, 0.3);
+}
 
-.header-underline{
+
+
+.header-edit-mobile .header-underline{
     width: 200px;
     height: 0;
     margin: 1% auto 0 auto;
     border-top: 1px solid #000;
 }
-.back-button{
+.header-edit-mobile .back-button{
     margin: 1.8% 0 0 2.7%;
+}
+
+.edit-task-mobile{
+    position: relative;
+    margin: 0 auto 0 auto;
+    
+    width: 330px;
+    height: 551px;
+    
+    background: rgba(153, 51, 204, 0.3);
+    border: 1px solid #9933CC;
+    border-radius: 20px;
+}
+.edit-task-mobile .task-header{
+    margin: 5.6% auto 0 auto;
+    width: 233px;
+    height: 60px;
+    
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+.edit-task-mobile .task-header-form{
+    width: 100%;
+    
+}
+.edit-task-mobile .header-modify{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.edit-task-mobile .task-header-underline{
+  
+    margin: 0 auto 0 auto;
+    width: 240px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.edit-task-mobile .task-additional{
+    margin: 0 auto;
+    margin-top: 1.7%;
+    width: 255px;
+    height: 72px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    
+    padding-right: 15px;
+}
+
+.edit-task-mobile .additional-information{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.edit-task-mobile .information-data{
+    margin-right: 7%;
+    color: #000;
+}
+.edit-task-mobile .information-time{
+    color: #000;
+}
+.edit-task-mobile .additional-remembering{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-end;
+    
+    font-size: 16px;
+    line-height: 20px;
+}
+.edit-task-mobile .remembering-word{
+    margin-right: 3%;
+}
+
+.edit-task-mobile .remembering-times{
+    text-align: end;
+}
+.edit-task-mobile .remembering-time span{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.edit-task-mobile .header-modify{
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+.edit-task-mobile .additional-remembering-link{
+    display: flex;
+    width: 255px;
+    justify-content:flex-end;
+    color:#000;
+}
+.edit-task-mobile .information-data-link{
+    margin-right: 7%;
+}
+.edit-task-mobile .task-description{
+    margin-top: 3%;
+    margin-left: 9%;
+    
+    font-family: 'Montserrat';
+}
+.edit-task-mobile .description-header{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.edit-task-mobile .description-text{
+    width: 300px;
+    height: 76px;
+    
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    
+    
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+.edit-task-mobile .description-text-modify{
+    width: 270px;
+    height: 76px;
+    padding: 11px;
+    font-weight: 300;
+    
+    resize: none;
+    outline: none;
+    
+}
+
+.edit-task-mobile .description-text-modify:focus{
+    margin-top: 70%;
+    border: 1px solid #9933CC;
+    border-radius: 10px;
+    width 300px;
+    height: 250px;
+}
+
+.edit-task-mobile .save-button{
+    position: absolute;
+    left:50%;
+    bottom: 2%;
+    transform: translate(-50%,-50%);
+
+    width: 71%;
+    height: 56px;
+
+    background-color: #FFFFFF;
+    border: 0.5px solid #9933CC;
+    border-radius: 20px;
+
+    color: #000;
+
+    display: flex;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-task-mobile .save-button:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.edit-task-mobile .save-button:active{
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
 }

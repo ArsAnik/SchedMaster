@@ -41,7 +41,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-    text-transform: capitalize;
 }
 .task-header-form{
     width: 100%;
@@ -184,3 +183,35 @@
     margin-right: 7%;
 }
 
+.save-button{
+    position: absolute;
+    left:50%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+
+    width: 71%;
+    height: 56px;
+
+    background-color: #FFFFFF;
+    border: 0.5px solid #9933CC;
+    border-radius: 20px;
+
+    color: #000;
+
+    display: flex;
+
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-button:hover{
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.save-button:active{
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
