@@ -15,6 +15,10 @@ delete  'api/task /:id'                 удалить задачу
 get     'api/user /:id'                 получение данных пользователя. Возвращает data с полями пользователя {login, avatar, group_name}
 post    'api/user/create'               создаёт пользователя. Нужно отправить {email, password, login}. В случае, если пользователь с данным email зарегистрирован, возвращает непустой json с message с ошибкой
 post    'api/user/edit /:id'            редактирует пользователя. Нужно отправить {login, avatar, group_name}. Аватар не нулевой.
+    register
+post    'api/register/enter'            вход в систему. Нужно отправить {email, password}. Возвращает id пользователя в случае удачи и message с описанием ошибки в случае незарегистрированного email или неправильного пароля
+post    'api/register/check'            проверяет существование пользователя по email. Нужно оправить {email}. Возвращает id пользователя, если есть.
+post    'api/register/resetPassword /:id' изменяет пароль пользователя. Нужно отправить {password}. Ничего не возвращает.
 
 
 ссылки фронтенда:
