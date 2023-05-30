@@ -4,7 +4,7 @@ import './EditTaskComponent.css';
 
 export default function EditTaskComponent(props){
     return(
-        <div className="watch-task">
+        <div className="edit-task">
 
             <form>
                 <div className="task-header">

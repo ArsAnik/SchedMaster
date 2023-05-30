@@ -1,4 +1,4 @@
-.watch-task{
+.edit-task{
     position: relative;
     margin: 70px auto;
     width: 930px;
@@ -8,7 +8,7 @@
     border-radius: 20px;
 }
 
-.task-header{
+.edit-task .task-header{
     position: absolute;
     width: 410px;
     height: 49px;
@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -28,67 +28,65 @@
     text-transform: capitalize;
 }
 
-.task-header-underline{
-    margin: 0 auto;
-    margin-top: 10%;
+.edit-task .task-header-underline{
+    margin: 10% auto 0 auto;
     width: 559px;
     height: 0;
     border: 1px solid #000000;
 }
 
-.task-additional{
-    margin: 0 auto;
-    margin-top: 1%;
+.edit-task .task-additional{
+    margin: 1% auto 0 auto;
     width: 255px;
     height: 72px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
 }
 
-.additional-information{
+.edit-task .additional-information{
     display: flex;
     align-items: center;
     justify-content:flex-end;
 }
-.information-data{
+.edit-task .information-data{
     margin-right: 7%;
     color: #000;
 }
-.information-time{
+.edit-task .information-time{
     color: #000;
 }
-.additional-remembering{
+.edit-task .additional-remembering{
     display: flex;
     align-items:flex-start;
     justify-content:flex-end;
 }
-.remembering-word{
+.edit-task .remembering-word{
     margin-right: 3%;
 }
 
-.remembering-times{
+.edit-task .remembering-times{
     text-align: end;
 }
-.remembering-time span{
-    font-family: 'Montserrat';
+.edit-task .remembering-time span{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
-.task-description{
+.edit-task .task-description{
     margin-top: 3%;
     margin-left: 9%;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
-.description-header{
+.edit-task .description-header{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 }
-.description-text{
+.edit-task .description-text{
     width: 774px;
 
     display: flex;
@@ -102,7 +100,7 @@
 }
 
 
-.description-text-modify{
+.edit-task .description-text-modify{
     width: 774px;
     height: 250px;
 
@@ -113,20 +111,20 @@
     padding: 15px;
 }
 
-.description-text-modify:focus{
+.edit-task .description-text-modify:focus{
     border: 1px solid #9933CC;
     border-radius: 10px;
 }
-.header-modify{
+.edit-task .header-modify{
     font-weight: 300;
     color: #000;
 }
-.additional-remembering-link{
+.edit-task .additional-remembering-link{
     display: flex;
     width: 255px;
     justify-content:flex-end;
     color:#000;
 }
-.information-data-link{
+.edit-task .information-data-link{
     margin-right: 7%;
 }
