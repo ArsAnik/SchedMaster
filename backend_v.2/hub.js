@@ -2,7 +2,6 @@ const mysql = require('mysql2');
 const express = require('express');
 const cors = require('cors');
 const router = require('./rotes');
-const taskController = require("./controllers/taskController");
 
 const app = express();
 app.use(cors());

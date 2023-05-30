@@ -18,14 +18,23 @@ class tasksPageController{
     }
     async task_edit(req, res) {
         let id = req.params.id;
-        const {name, description, begin_date, end_date, all_day} = req.body;
+        const name = req.body.name;
+        const description = req.body.description;
+        const begin_date = req.body.begin_date;
+        const end_date = req.body.end_date;
+        const all_day = req.body.all_day;
         pool.query("UPDATE `own tasks` SET `name`=?, `description`=?, `begin_date`=?, `end_date`=?, `all_day`=? WHERE `own tasks`.`id`=?;", [name, description, begin_date, end_date, all_day, id], function (err, data) {
             if (!err) return res.json();
         });
     }
 
     async task_create(req, res) {
-        const {name, description, begin_date, end_date, all_day, FK_user} = req.body;
+        const name = req.body.name;
+        const description = req.body.description;
+        const begin_date = req.body.begin_date;
+        const end_date = req.body.end_date;
+        const all_day = req.body.all_day;
+        const FK_user = req.body.FK_user;
         pool.query("INSERT INTO `own tasks` (name, description, begin_date, end_date, all_day, FK_user) VALUES (?,?,?,?,?,?)", [name, description, begin_date, end_date, all_day, FK_user], function (err, data) {
             if (!err) return res.json();
         });
