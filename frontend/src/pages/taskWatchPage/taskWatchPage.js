@@ -29,10 +29,8 @@ export const TaskWatch = () => {
                     <WatchTaskComponent
                         id={data.id}
                         name={data.name}
-                        date_begin={myTime.getShortDate(new Date(data.begin_date))}
-                        date_end={myTime.getShortDate(new Date(data.end_date))}
-                        time_begin={myTime.getShortTime(new Date(data.begin_date))}
-                        time_end={myTime.getShortTime(new Date(data.end_date))}
+                        date_begin={myTime.getFullDate(new Date(data.begin_date))}
+                        date_end={myTime.getFullDate(new Date(data.end_date))}
                         description={data.description}
                     />
                 }
@@ -41,9 +39,7 @@ export const TaskWatch = () => {
         );
     }else{
         return(
-            <Routes>
-                <Route path='*' element={<Navigate to={ERROR_404_PAGE}/>}/>
-            </Routes>
+            <Navigate to={ERROR_404_PAGE}/>
         );
     }
 

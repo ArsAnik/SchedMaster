@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import ReactDOM from "react-dom"
 
 import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
@@ -11,7 +10,7 @@ import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
 import {useParams} from "react-router-dom";
 import myTime from "../../utils/myTime";
 
-function TasksNewPage() {
+function TasksEditPage() {
     const [data, setData] = useState(1);
     const task_id = useParams().id;
 
@@ -30,10 +29,8 @@ function TasksNewPage() {
             <EditTaskComponent
                 id={data.id}
                 name={data.name}
-                date_begin={myTime.getShortDate(new Date(data.begin_date))}
-                date_end={myTime.getShortDate(new Date(data.end_date))}
-                time_begin={myTime.getShortTime(new Date(data.begin_date))}
-                time_end={myTime.getShortTime(new Date(data.end_date))}
+                date_begin={myTime.getFullDate(new Date(data.begin_date))}
+                date_end={myTime.getFullDate(new Date(data.end_date))}
                 description={data.description}
             />
         </div>
@@ -41,4 +38,4 @@ function TasksNewPage() {
     }
 }
 
-export default TasksNewPage;
+export default TasksEditPage;

@@ -7,7 +7,6 @@ import '../ImportantStyles/common.css'
 
 import NewTaskComponent from "../../components/TaskNewComponent/NewTaskComponent/NewTaskComponent";
 import BackButtonComponent from "../../components/CommonElement/BackButtonComponent/BackButtonComponent";
-import TasksPage from "../tasksPage/tasksPage";
 
 function TasksNewPage() {
     return (

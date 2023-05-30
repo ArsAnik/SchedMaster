@@ -2,12 +2,15 @@ import React, {useState} from "react";
 import './NewTaskComponent.css';
 import clock from '../../../pictures/add-task-clock.svg'
 import bell from '../../../pictures/add-task-bell.svg'
+import {useNavigate} from "react-router-dom";
 export default function NewTaskComponent(){
+    const navigate = useNavigate();
+
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
-    const [begin_date, setBeginDate] = useState('11.11.2002');
-    const [end_date, setEndDate] = useState('11.11.2002');
-    const [all_day, setAllDay] = useState(0);
+    const [begin_date, setBeginDate] = useState('');
+    const [end_date, setEndDate] = useState('');
+    const [all_day, setAllDay] = useState(false);
     const FK_user = 5;
 
     const handleSubmit = async (event) => {
@@ -20,6 +23,7 @@ export default function NewTaskComponent(){
             },
             body: JSON.stringify({ name, description, begin_date, end_date, all_day, FK_user})
         });
+        navigate('/tasksPage');
     };
 
     return(
@@ -33,6 +37,7 @@ export default function NewTaskComponent(){
                         className="task-header-input"
                         value={name}
                         onChange={(event) => setName(event.target.value)}
+                        required
                     />
 
                 </div>
@@ -44,13 +49,23 @@ export default function NewTaskComponent(){
                     <div className="element-data-start">
 
                         <span className="text-link-color">Дата и время начала: </span>
-                        <input type="datetime-local" />
+                        <input
+                            type="datetime-local"
+                            value={begin_date}
+                            onChange={(event) => setBeginDate(event.target.value)}
+                            required
+                        />
                     </div>
 
                     <div className="element-data-end">
 
                         <span className="text-link-color">Дата и время окончания: </span>
-                        <input type="datetime-local" />
+                        <input
+                            type="datetime-local"
+                            value={end_date}
+                            onChange={(event) => setEndDate(event.target.value)}
+                            required
+                        />
                     </div>
 
                     <div className="element-notification-whole-day">
@@ -58,7 +73,11 @@ export default function NewTaskComponent(){
                         <label>
                             <a href="@"><img src={clock} /></a>
                             <span className="text-link-color">Весь день</span>
-                            <input type="checkbox"/>
+                            <input
+                                type="checkbox"
+                                checked={all_day}
+                                onChange={(event) => setAllDay(event.target.checked)}
+                            />
 
                         </label>
 
@@ -87,6 +106,7 @@ export default function NewTaskComponent(){
                             placeholder="добавьте описание"
                             value={description}
                             onChange={(event) => setDescription(event.target.value)}
+                            required
                         >
                         </textarea>
                     </div>
