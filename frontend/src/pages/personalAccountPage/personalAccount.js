@@ -74,9 +74,7 @@ function PersonalArea() {
 
             <div className="back-button">
                 <a onClick={(event) => {
-                    setLogin(log1);
-                    setGroup_name(gname1);
-                    setSwitcher(1);
+                    navigate(`/tasksPage`);
                 }}>
                     <svg className="arrow" width="53" height="58" viewBox="0 0 53 58" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
@@ -121,9 +119,9 @@ function PersonalArea() {
 
                     <div className="back-button">
                         <a onClick={(event) => {
-                            setSwitcher(1);
                             setLogin(log1);
                             setGroup_name(gname1);
+                            setSwitcher(1);
                         }}>
                             <svg className="arrow" width="53" height="58" viewBox="0 0 53 58" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
