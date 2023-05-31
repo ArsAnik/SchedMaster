@@ -7,6 +7,7 @@ import taskEditPage from "./pages/taskEditPage/taskEditPage";
 import registration from "./pages/registration/registration";
 import login from "./pages/loginPage/login";
 import mainPage from "./pages/mainPage/mainPage";
+import personalAccount from "./pages/personalAccountPage/personalAccount";
 
 export const allRoutes = [
     {
@@ -24,6 +25,10 @@ export const allRoutes = [
     {
         path: pages.LOGIN,
         Component: login
+    },
+    {
+        path: pages.PERSONAL_ACCOUNT,
+        Component: personalAccount
     }
 ]
 

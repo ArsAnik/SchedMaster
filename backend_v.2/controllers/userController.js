@@ -11,7 +11,7 @@ class userController{
 
     async user_get(req, res) {
         let id = req.params.id;
-        pool.query("SELECT login, avatar, (SELECT `schedule`.`name` FROM schedule WHERE `schedule`.`id` = `user`.`FK_schedule`) AS group_name FROM user WHERE id=?;",
+        pool.query("SELECT login, (SELECT `schedule`.`name` FROM schedule WHERE `schedule`.`id` = `user`.`FK_schedule`) AS group_name FROM user WHERE id=?;",
             [id], function (err, data) {
             if (!err) return res.json({
                 data: data
@@ -22,9 +22,8 @@ class userController{
         let id = req.params.id;
         const group_name = req.body.group_name;
         const login = req.body.login;
-        const avatar = req.body.avatar;
-        pool.query("UPDATE `user` SET `login`=?, `avatar`=?, `FK_schedule` = (SELECT `schedule`.`id` FROM `schedule` WHERE `schedule`.`name`=?) WHERE `user`.`id`=?",
-            [login, avatar, group_name, id], function (err, data) {
+        pool.query("UPDATE `user` SET `login`=?, `FK_schedule` = (SELECT `schedule`.`id` FROM `schedule` WHERE `schedule`.`name`=?) WHERE `user`.`id`=?",
+            [login, group_name, id], function (err, data) {
             if (!err) return res.json();
         });
     }

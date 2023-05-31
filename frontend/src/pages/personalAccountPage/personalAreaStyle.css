@@ -1,0 +1,224 @@
+.image{
+    position: absolute;
+    right:0%;
+    display: block;
+    height: 100%;
+}
+.background-image-svg{
+    position: absolute;
+    bottom:0;
+    right:0;
+
+}
+.account-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    min-height: 750px;
+
+}
+
+.account-block{
+    position: relative;
+    width: 557px;
+    height: 714px;
+    margin: 0 auto;
+    background: #F5EBFA;
+    border: 0.5px solid #9933CC;
+    border-radius: 20px;
+}
+
+.avatar-block{
+    position: relative;
+    
+    width: 179px;
+    height: 179px;
+    
+    border: 1px solid #9966CC;
+    border-radius: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 36px auto 0;
+}
+.without-avatar{
+    background: rgba(153, 102, 204, 0.5);
+}
+.avatar{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.personLetter{
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 36px;
+    color: #000000;
+}
+.information{
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 500px;
+    flex-direction: column;
+    margin: 30px auto 0;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    overflow: hidden;
+    
+}
+.information-name{
+    height: 30px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    border-bottom: 0.5px solid #000000;
+}
+.information-group{
+    height: 30px;
+    margin-top: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: 0.5px solid #000000;
+}
+.information-change-name{
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color:#000000;
+    
+}
+
+.information-change-group{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 76%;
+    top: 42%;
+
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color:#000000;
+    
+}
+
+.information-change-button{
+    display: block;
+    margin: 15px auto 0;
+    width: 62px;
+    cursor: pointer;
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+    color: #000;
+}
+
+.information-change-button:hover{
+    text-shadow: 0px 0px 10px rgba(153, 51, 204, 0.7);
+}
+
+.information-change-button:active{
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(153, 51, 204, 0.7);
+}
+
+.account-exit{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 115px;
+    width: 400px;
+    height: 56px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background-color: #FFFFFF;
+    border: 0.5px solid #9999CC;
+    border-radius: 20px;
+
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 27px;
+    color: #000000;
+}
+.menu-developersLink{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 108px;
+
+    font-family: 'Comfortaa', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color:#000000;
+}
+
+.back-button{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+@media (max-width: 1100px) {
+    .image{
+        z-index: 1;
+        display: block;
+        height: 100%;
+    }
+    .back-button{
+        display: none;
+    }
+    .account-block{
+        width: 330px;
+        height: 551px;
+    }
+    .avatar-block{
+        width: 110px;
+        height: 110px;
+    }
+    .personLetter{
+        font-size: 38px;
+    }
+    .information{
+        margin-top: 50px;
+        font-size: 20px;
+        max-width: 320px;
+    }
+    .information-group{
+        margin-top: 14px;
+    }
+    .information-change-button{
+        margin-top: 9px;
+    }
+    .account-exit{
+        font-size: 22px;
+        width: 264px;
+        height: 43px;
+        bottom: 56px;
+    }
+    .menu-developersLink{
+        bottom: 40px;
+        font-size: 10px;
+    }
+}
