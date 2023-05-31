@@ -17,7 +17,6 @@ function Registration() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(email, login, password, password2);
         await fetch('/api/user/create', {
             method: 'POST',
             headers: {
@@ -26,7 +25,7 @@ function Registration() {
             body: JSON.stringify({ email, login, password})
         }).then(response => response.json()).
         then(response => setId(response.id));
-        navigate(`/tasksPage/${id}`);
+        navigate(`/tasksPage`);
     };
     return (
         <div className="main-container">
@@ -91,7 +90,7 @@ function Registration() {
                             />
                         </div>
                     </div>
-                    <button className="save-button" type="submit">Сохранить</button>
+                    <button className="continue-button" type="submit">Сохранить</button>
                 </form>
 
             </div>

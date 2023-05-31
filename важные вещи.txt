@@ -25,3 +25,4 @@ post    'api/register/resetPassword /:id' изменяет пароль поль
 
 http://localhost:3000/tasksPage - страница задач
 http://localhost:3000/task/:id - страница задачи
+http://localhost:3000/registration - страници регистрации
