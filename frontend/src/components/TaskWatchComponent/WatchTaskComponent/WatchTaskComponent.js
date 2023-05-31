@@ -21,22 +21,9 @@ function WatchTaskComponent(props){
 
                     <div className="information-data">{props.date_begin}</div>
                     <div className="information-data">{props.time_begin}</div>
-                    <span> - </span>
+                    <span> — </span>
                     <div className="information-time">{props.date_end}</div>
                     <div className="information-time">{props.time_end}</div>
-
-                </div>
-                <div className="additional-remembering">
-
-                    <div className="remembering-word">Напомнить</div>
-                    <div className="remembering-times">
-                        <div className="remembering-time">
-                            за <span>30 минут</span>
-                        </div>
-                        <div className="remembering-time">
-                            за <span>5 минут</span>
-                        </div>
-                    </div>
 
                 </div>
             </div>

@@ -8,6 +8,8 @@ import main from '../../pictures/mainPagePic.svg'
 
 function mainPage() {
 
+    console.log(localStorage.getItem('user'));
+
     return (
         <div className="main-body">
             <div>

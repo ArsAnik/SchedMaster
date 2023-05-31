@@ -15,8 +15,6 @@ function Registration() {
     const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
     const [password2, setPassword2] = useState('');
-    const [id, setId] = useState('');
-
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -28,8 +26,16 @@ function Registration() {
                 },
                 body: JSON.stringify({ email, login, password})
             }).then(response => response.json()).
-            then(response => setId(response.id));
-            navigate(`/tasksPage/${id}`);
+            then(data => {
+                if(data.id){
+                    localStorage.setItem('user', data.id);
+                    navigate(`/tasksPage/`);
+                }
+                else
+                {
+                    alert('Ошибка регистрации!');
+                }
+            });
         }
         else
         {

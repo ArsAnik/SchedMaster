@@ -8,11 +8,11 @@
 .header-text{
     display: flex;
     position: relative;
-    width: 1000px;
     height: 110px;
     top: 60px;
     left: 50%;
     transform: translate(-50%,-50%);
+    justify-content: center;
     
     
     align-content: center;
@@ -132,8 +132,6 @@
     
     width: 179px;
     height: 32px;
-    margin-right: 17px;
-    margin-left: 177px;
     border-radius: 50px;
 }
 
@@ -188,7 +186,6 @@
     .header-text-task{
         width: 150px;
         height: 27px;
-        margin-left: 228px;
     }
     .header-text-schedule{
         width: 214.2px;
@@ -224,7 +221,6 @@
     .header-text-task{
         width: 126px;
         height: 22.68px;
-        margin-left: 268px;
     }
     .header-text-schedule{
         width: 180px;

@@ -67,31 +67,6 @@ export default function NewTaskComponent(){
                         />
                     </div>
 
-                    <div className="element-notification-whole-day">
-
-                        <label>
-                            <a href="@"><img src={clock} /></a>
-                            <span className="text-link-color">Весь день</span>
-                            <input
-                                type="checkbox"
-                                checked={all_day}
-                                onChange={(event) => setAllDay(event.target.checked)}
-                            />
-
-                        </label>
-
-
-                    </div>
-
-                    <div className="element-notification-add">
-                        <div className="add-bell-container"><a href="@" className="notification-add-bell"><img
-                            src={bell}/></a></div>
-                        <div className="add-notification-container"><a href="@" className="text-link-color">Добавить
-                            уведомление</a></div>
-
-                    </div>
-
-
                 </div>
 
                 <div className="new-task-description">

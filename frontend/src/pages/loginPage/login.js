@@ -24,7 +24,15 @@ function Login() {
             },
             body: JSON.stringify({ email, password })
         }).then(response => response.json()).
-        then(response => response.id ? navigate(`/tasksPage/`):1);
+        then(data => {
+            if(data.id){
+                navigate(`/tasksPage/`);
+            }
+            else
+            {
+                alert('Неверный логин/пароль!');
+            }
+        });
     };
     return (
         <div className="main-container">
@@ -63,7 +71,7 @@ function Login() {
                         </div>
                         <div className="input-something">
                             <input
-                                //type="password"
+                                type="password"
                                 placeholder="пароль"
                                 className="task-header-input"
                                 value={password}

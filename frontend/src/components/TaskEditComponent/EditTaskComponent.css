@@ -2,7 +2,7 @@
     position: relative;
     margin: 70px auto;
     width: 930px;
-    height: 624px;
+    height: 700px;
     background-color: rgba(153, 51, 204, 0.3);
     border: 1px solid #9933CC;
     border-radius: 20px;
@@ -12,7 +12,7 @@
     position: absolute;
     width: 410px;
     height: 49px;
-    top: 10.5%;
+    top: 50px;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -27,23 +27,33 @@
     text-align: justify;
 }
 
-.edit-task .task-header-underline{
-    margin: 10% auto 0 auto;
-    width: 559px;
-    height: 0;
-    border: 1px solid #000000;
-}
-
-.edit-task .task-additional{
-    margin: 1% auto 0 auto;
-    width: 255px;
-    height: 72px;
-
+.edit-task .task-modify-elements{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    margin: 8% auto 0;
+    width: 500px;
+}
+
+.edit-task .element-data-start{
+    width: 500px;
+    margin-bottom: 2%;
+    color: #000;
+}
+
+.edit-task .element-data-end{
+    width: 500px;
+    margin-bottom: 7%;
+}
+
+.edit-task .task-header-underline{
+    margin: 10% auto 0 auto;
+    width: 559px;
+    height: 0;
+    border: 1px solid #000000;
 }
 
 .edit-task .additional-information{

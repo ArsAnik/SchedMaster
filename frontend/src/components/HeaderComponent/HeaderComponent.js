@@ -16,20 +16,6 @@ export default function HeaderComponent(props){
 
                     </div>
 
-                    <div className="header-text-schedule">
-                        <div className="header-text-schedule-container">
-
-                            <a className="header-text-schedule-button" href="/schedule">Расписание</a>
-                        </div>
-
-                    </div>
-
-                    <div className="header-text-calendar">
-
-                        <a className="header-text-calendar-button" href="/calendar">Календарь</a>
-
-                    </div>
-
                 </div>
 
                 <a className="open-personalWindow without-avatar" href="@">
