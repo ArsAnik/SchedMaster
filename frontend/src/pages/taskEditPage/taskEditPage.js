@@ -29,10 +29,6 @@ function TasksEditPage() {
             <BackButtonComponent/>
             <EditTaskComponent
                 id={task_id}
-                // name={data.name}
-                // date_begin={myTime.getFullDate(new Date(data.begin_date))}
-                // date_end={myTime.getFullDate(new Date(data.end_date))}
-                // description={data.description}
             />
         </div>
         );
