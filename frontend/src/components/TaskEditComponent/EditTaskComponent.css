@@ -26,13 +26,13 @@
 }
 
 .edit-task .task-modify-elements{
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin: 8% auto 0;
     width: 500px;
 }
 
@@ -125,6 +125,8 @@
 .edit-task .header-modify{
     font-weight: 300;
     color: #000;
+
+    text-align: center;
 }
 .edit-task .additional-remembering-link{
     display: flex;
@@ -222,9 +224,8 @@
     }
 
     .edit-task-mobile .task-additional{
-        margin: 0 auto;
-        margin-top: 1.7%;
-        width: 255px;
+        margin: 17% auto 0 auto;
+        width: 500px;
         height: 72px;
 
         font-family: 'Montserrat';

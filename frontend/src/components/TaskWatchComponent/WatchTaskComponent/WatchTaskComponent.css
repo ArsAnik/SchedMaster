@@ -18,7 +18,7 @@
     border-radius: 20px;
 }
 
-.task-header{
+.watch-task .task-header{
     margin: 5.6% auto 0 auto;
     width: 558px;
     height: 49px;
@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-.task-header-underline{
+.watch-task .task-header-underline{
 
     margin: 0 auto 0 auto;
     width: 559px;
@@ -43,7 +43,7 @@
     border: 1px solid #000000;
 }
 
-.task-additional{
+.watch-task .task-additional{
     margin: 0 auto;
     margin-top: 1.7%;
     width: 255px;
@@ -56,41 +56,41 @@
     line-height: 24px;
 }
 
-.additional-information{
+.watch-task .additional-information{
     display: flex;
     align-items: center;
     justify-content:flex-end;
     text-align: center;
 }
 
-.additional-remembering{
+.watch-task .additional-remembering{
     display: flex;
     align-items:flex-start;
     justify-content:flex-end;
 }
-.remembering-word{
+.watch-task .remembering-word{
     margin-right: 3%;
 }
 
-.remembering-times{
+.watch-task .remembering-times{
     text-align: end;
 }
-.remembering-time span{
+.watch-task .remembering-time span{
     font-family: 'Montserrat';
     font-weight: 600;
 }
-.task-description{
+.watch-task .task-description{
     margin-top: 3%;
     margin-left: 9%;
 
     font-family: 'Montserrat';
 }
-.description-header{
+.watch-task .description-header{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 }
-.description-text{
+.watch-task .description-text{
     width: 774px;
 
     display: flex;
@@ -103,17 +103,17 @@
     line-height: 24px;
 
 }
-.modify-button{
+.watch-task .modify-button{
     position: absolute;
     bottom: 3%;
     right: 3%;
 }
 
-.modify-button:hover{
+.watch-task .modify-button:hover{
     filter: drop-shadow(0px 0px 7px #9933CC);
 }
 
-.modify-button:active{
+.watch-task .modify-button:active{
     filter: drop-shadow(0px 0px 7px #9933CC);
 }
 @media (max-width: 1000px){
@@ -125,30 +125,29 @@
     width: 330px;
     height: 551px;
     margin: 35% auto;
-}
-.task-header{
+}  .watch-task .task-header{
     width: 233px;
     height: 35px;
     font-size: 26px;
     line-height: 32px;
 }
-.task-additional{
+    .watch-task .task-additional{
     padding-right: 15px;
 }
-.additional-information{
+    .watch-task .additional-information{
     text-align: center;
     font-size: 18px;
     line-height: 22px;
 }
-.additional-remembering{
+    .watch-task .additional-remembering{
     font-size: 16px;
     line-height: 20px;
 }
-.description-header{
+    .watch-task .description-header{
     font-size: 16px;
     line-height: 20px;
 }
-.description-text{
+    .watch-task .description-text{
     width: 274px;
     height: 76px;
     font-size: 14px;

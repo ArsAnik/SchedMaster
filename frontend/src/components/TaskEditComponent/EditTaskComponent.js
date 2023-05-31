@@ -134,7 +134,7 @@ export default function EditTaskComponent(props){
                                 <span className="text-link-color">Дата и время окончания: </span>
                                 <input
                                     type="datetime-local"
-                                    value={end_date}
+                                    value={new Date(155555)}
                                     onChange={(event) => setEndDate(event.target.value)}
                                     required
                                 />
