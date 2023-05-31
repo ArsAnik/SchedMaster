@@ -4,8 +4,6 @@ import './HeaderComponent.css'
 import logo from '../../pictures/logo.svg';
 
 export default function HeaderComponent(props){
-    //const [open, setOpen] = useState<boolean>(false);
-    //const close = () => setOpen(false);
     if(window.screen.availWidth > 1162){
         return(
             <header className="header">
