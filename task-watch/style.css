@@ -23,7 +23,9 @@
     width: 558px;
     height: 49px;
    
-    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -116,7 +118,46 @@
 .modify-button:active{
     filter: drop-shadow(0px 0px 7px #9933CC);
 }
-
+@media(max-width: 1000px){
+    .header{
+        display: none;
+    }
+    .task-header-underline{
+        width: 240px;
+    }
+    .watch-task{
+        width: 330px;
+        height: 551px;
+        margin: 44% auto;
+    }
+    .task-header{
+        width: 233px;
+        height: 35px;
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .task-additional{
+        padding-right: 15px;
+    }
+    .additional-information{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .additional-remembering{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .description-header{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .description-text{
+        width: 274px;
+        height: 76px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
 
 
 
