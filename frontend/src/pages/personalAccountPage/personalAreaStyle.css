@@ -174,7 +174,7 @@
     color:#000000;
 }
 
-.back-button{
+.back-button-pers{
     position: absolute;
     top: 10%;
     left: 7%;
@@ -183,7 +183,7 @@
 @media (max-width: 1100px) {
     .image{
         z-index: 1;
-        display: block;
+        display: none;
         height: 100%;
     }
     .account-block{

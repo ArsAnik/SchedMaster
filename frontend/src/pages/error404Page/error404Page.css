@@ -1,0 +1,47 @@
+.error_block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 296px;
+    text-align: center;
+    width: 255px;
+}
+
+.error_head{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.error_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 31px;
+}
+
+.error_button{
+    display: flex;
+    width: 250px;
+    height: 36px;
+    background: #C68CE2;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}

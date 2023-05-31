@@ -72,7 +72,7 @@ function PersonalArea() {
                 </div>
             </div>
 
-            <div className="back-button">
+            <div className="back-button-pers">
                 <a onClick={(event) => {
                     navigate(`/tasksPage`);
                 }}>

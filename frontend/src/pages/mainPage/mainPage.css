@@ -51,7 +51,6 @@
 
 .enter{
     padding-right: 10px;
-    padding-left: 90px;
     border-right: 1px solid #000000;
 }
 
@@ -61,7 +60,6 @@
 
 .image{
     height: 100vh;
-    display: block;
 }
 
 .coming{
