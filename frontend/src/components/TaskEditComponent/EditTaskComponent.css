@@ -9,12 +9,10 @@
 }
 
 .edit-task .task-header{
-    position: absolute;
+    position: relative;
     width: 410px;
     height: 49px;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 50px auto 0;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -50,7 +48,7 @@
 }
 
 .edit-task .task-header-underline{
-    margin: 10% auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 559px;
     height: 0;
     border: 1px solid #000000;
