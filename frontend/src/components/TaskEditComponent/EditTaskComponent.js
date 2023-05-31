@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './EditTaskComponent.css';
 import {useNavigate} from "react-router-dom";
+import myTime from "../../utils/myTime";
 
 export default function EditTaskComponent(props){
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function EditTaskComponent(props){
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        await fetch('/api/task/edit/'+props.id, {
+        await fetch(`/api/task/edit/${task_id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -39,7 +40,7 @@ export default function EditTaskComponent(props){
         return(
             <div className="edit-task">
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="task-header">
 
                         <input type="text"
@@ -91,7 +92,7 @@ export default function EditTaskComponent(props){
                         />
                         </div>
                     </div>
-                    <button onSubmit={handleSubmit} className="save-button" type="submit">Сохранить</button>
+                    <button  className="save-button" type="submit">Сохранить</button>
                 </form>
             </div>
         )
@@ -100,7 +101,7 @@ export default function EditTaskComponent(props){
     {
         return(
             <div className="edit-task-mobile">
-                <form className="task-header-form">
+                <form className="task-header-form" onSubmit={handleSubmit}>
 
                     <div className="task-header">
 
@@ -152,7 +153,7 @@ export default function EditTaskComponent(props){
 
                     </div>
 
-                        <button className="save-button-container">
+                        <button className="save-button-container" type="submit">
                             <div className="save-button">
                                 Сохранить
                             </div>
