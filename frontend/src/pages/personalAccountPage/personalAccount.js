@@ -5,9 +5,12 @@ import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 import './personalAreaStyle.css'
 import logo from '../../pictures/personalAccount.svg'
-import {useNavigate, useParams} from "react-router-dom";
+import {Navigate, useNavigate, useParams} from "react-router-dom";
+import {ERROR_404_PAGE} from "../../utils/consts";
 
-function PersonalArea() {
+function PersonalArea(key) {
+
+    const navigate = useNavigate();
 
     const [data, setData] = useState(1);
     const [switcher, setSwitcher] = useState(1);
@@ -16,20 +19,21 @@ function PersonalArea() {
     const [log1, setLog1] = useState("");
     const [gname1, setGname] = useState("");
 
+    const user_id = localStorage.getItem('user');
+
     useEffect(() => {
-        fetch(`/api/user/5`).
+        fetch(`/api/user/`+user_id).
         then(response => response.json()).
         then(response => {
             setLogin(response.data[0].login );
             setGroup_name(response.data[0].group_name ? response.data[0].group_name : "1111-111111D");
         });
     }, []);
-    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setSwitcher(1);
-        await fetch('/api/user/edit/5', {
+        await fetch('/api/user/edit/'+user_id, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -39,6 +43,11 @@ function PersonalArea() {
         console.log("handleSubmit");
         navigate(`/tasksPage`);
     };
+    if(!user_id){
+        return(
+            <Navigate to={ERROR_404_PAGE}/>
+        );
+    }
 
         return (switcher ?
         <div className="main-container">
@@ -61,7 +70,10 @@ function PersonalArea() {
                     setGname(group_name);
                     }}>изменить</a>
 
-                    <a href="/tasksPage">
+                    <a onClick={(event) => {
+                        localStorage.clear();
+                        navigate(`/`);
+                    }}>
                         <div className="account-exit">
 
                             <p className="exit-button">Выйти</p>

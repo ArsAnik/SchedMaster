@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {TASK_WATCH_PAGE} from "../../utils/consts";
+import {ERROR_404_PAGE, TASK_WATCH_PAGE} from "../../utils/consts";
 
 import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
@@ -8,17 +8,27 @@ import '../ImportantStyles/common.css'
 import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
 import TaskItemComponent from "../../components/TaskComponent/TaskItem/TaskItemComponent";
 import ButtonComponent from "../../components/CommonElement/ButtonComponent/ButtonComponent";
+import {Navigate} from "react-router-dom";
 
 const myTime = require('../../utils/myTime');
 
+const user_id = localStorage.getItem('user');
 function TasksPage() {
   const [data, setData] = useState(null);
-  const user_id = 5;
+
+    const user_id = localStorage.getItem('user');
+
   useEffect(() => {
     fetch(`/api/tasksPage/${user_id}`).
         then(response => response.json()).
         then(response => setData(response.own_tasks));
   }, []);
+    if(!user_id){
+        return(
+            <Navigate to={ERROR_404_PAGE}/>
+        );
+    }
+    
   return (
         <div className="main-container">
 

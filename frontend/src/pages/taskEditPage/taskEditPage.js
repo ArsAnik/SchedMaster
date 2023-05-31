@@ -7,12 +7,15 @@ import '../ImportantStyles/common.css'
 import BackButtonComponent from "../../components/CommonElement/BackButtonComponent/BackButtonComponent";
 import EditTaskComponent from "../../components/TaskEditComponent/EditTaskComponent";
 import HeaderComponent from "../../components/HeaderComponent/HeaderComponent";
-import {useParams} from "react-router-dom";
+import {Navigate, useParams} from "react-router-dom";
 import myTime from "../../utils/myTime";
+import {ERROR_404_PAGE} from "../../utils/consts";
 
 function TasksEditPage() {
     const [data, setData] = useState(1);
     const task_id = useParams().id;
+
+    const user_id = localStorage.getItem('user');
 
     useEffect(() => {
         fetch(`/api/task/${task_id}`).
@@ -20,6 +23,11 @@ function TasksEditPage() {
         then(response => setData(response.data[0]));
     }, []);
 
+    if(!user_id){
+        return(
+            <Navigate to={ERROR_404_PAGE}/>
+        );
+    }
     if(data){
         return(
 
@@ -34,6 +42,11 @@ function TasksEditPage() {
                 description={data.description}
             />
         </div>
+        );
+    } else
+    {
+        return(
+            <Navigate to={ERROR_404_PAGE}/>
         );
     }
 }

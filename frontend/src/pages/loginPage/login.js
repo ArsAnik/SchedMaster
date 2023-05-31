@@ -26,6 +26,7 @@ function Login() {
         }).then(response => response.json()).
         then(data => {
             if(data.id){
+                localStorage.setItem('user', data.id);
                 navigate(`/tasksPage/`);
             }
             else
