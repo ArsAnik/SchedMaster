@@ -72,11 +72,23 @@
     text-align: center;
 }
 .continue-button{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
     width:394px;
     height: 56px;
     margin-top:120px;
-    font-size: 30px;
-    line-height: 33px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    background: #9999CC;
+    border: 0.5px solid #9999CC;
+    border-radius: 20px;
+    padding: 5px 0;
+
 }
 @media(max-width:1000px){
     .image{
@@ -86,7 +98,7 @@
     .registr-account{
         width: 316px;
         height: 450px;
-        margin-top: 13%;
+        margin-top: 50%;
     }
     .description-registr{
         font-size: 26px;
@@ -107,5 +119,8 @@
 
         font-size: 18px;
         line-height: 20px;
+    }
+    .registr-account input{
+        padding: 5px;
     }
 }

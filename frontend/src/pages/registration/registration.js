@@ -110,7 +110,7 @@ function Registration() {
                             />
                         </div>
                     </div>
-                    <button className="continue-button" type="submit">Сохранить</button>
+                    <button className="continue-button" type="submit">Авторизация</button>
                 </form>
 
             </div>
