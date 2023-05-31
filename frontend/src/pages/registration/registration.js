@@ -4,6 +4,8 @@ import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 import './registration.css'
+import pic from "../../pictures/registration_krakozyabri.svg"
+import logo from "../../pictures/registration-link-account.svg"
 import {useNavigate} from "react-router-dom";
 
 function Registration() {
@@ -17,25 +19,30 @@ function Registration() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(email, login, password, password2);
-        await fetch('/api/user/create', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, login, password})
-        }).then(response => response.json()).
-        then(response => setId(response.id));
-        navigate(`/tasksPage/${id}`);
+        if(password === password2){
+            await fetch('/api/user/create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, login, password})
+            }).then(response => response.json()).
+            then(response => setId(response.id));
+            navigate(`/tasksPage/${id}`);
+        }
+        else
+        {
+            alert('Пароли не совпадают!');
+        }
     };
     return (
         <div className="main-container">
 
             <div>
-                <img src="../pictures/registration_krakozyabri.svg" className="image"/>
+                <img src={pic} className="image"/>
             </div>
 
-            <a href="@">
+            <a href="/">
                 <svg className="back-button-svg" width="44" height="50" viewBox="0 0 44 50" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path className="back-button-fill"
@@ -46,7 +53,7 @@ function Registration() {
             </a>
 
 
-            <a href="@"> <img src="../pictures/registration-link-account.svg" className="person-account-link"/></a>
+            <a href="@"> <img src={logo} className="person-account-link"/></a>
 
             <div className="registr-account">
 
@@ -56,6 +63,7 @@ function Registration() {
 
                         <div className="input-something">
                             <input
+                                type="email"
                                 placeholder="введите вашу почту"
                                 className="task-header-input"
                                 value={email}
@@ -74,8 +82,10 @@ function Registration() {
                         </div>
                         <div className="input-something">
                             <input
+                                type="password"
                                 placeholder="пароль"
                                 className="task-header-input"
+                                id="password"
                                 value={password}
                                 onChange={(event) => setPassword(event.target.value)}
                                 required
@@ -83,6 +93,8 @@ function Registration() {
                         </div>
                         <div className="input-something">
                             <input
+                                id="confirm_password"
+                                type="password"
                                 placeholder="повторите пароль"
                                 className="task-header-input"
                                 value={password2}
