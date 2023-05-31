@@ -16,7 +16,7 @@ const user_id = localStorage.getItem('user');
 function TasksPage() {
   const [data, setData] = useState(null);
 
-    const user_id = localStorage.getItem('user');
+  const user_id = localStorage.getItem('user');
 
   useEffect(() => {
     fetch(`/api/tasksPage/${user_id}`).

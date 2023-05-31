@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 export default function EditTaskComponent(props){
     const navigate = useNavigate();
 
+    setTimeout(()=>{}, 1000);
     const [name, setName] = useState(props.name);
     const [description, setDescription] = useState(props.description);
     const [begin_date, setBeginDate] = useState(props.date_begin);

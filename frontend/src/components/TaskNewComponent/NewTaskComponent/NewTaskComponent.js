@@ -5,13 +5,13 @@ import bell from '../../../pictures/add-task-bell.svg'
 import {useNavigate} from "react-router-dom";
 export default function NewTaskComponent(){
     const navigate = useNavigate();
-
+    const user_id = localStorage.getItem('user');
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
     const [begin_date, setBeginDate] = useState('');
     const [end_date, setEndDate] = useState('');
     const [all_day, setAllDay] = useState(false);
-    const FK_user = 5;
+    const FK_user = user_id;
 
     const handleSubmit = async (event) => {
         event.preventDefault();
