@@ -32,7 +32,7 @@ export default function HeaderComponent(props){
 
                 </div>
 
-                <a className="open-personalWindow without-avatar" href="@">
+                <a className="open-personalWindow without-avatar" href="/personalArea">
                     <span className="personLetter">Я</span>
 
                 </a>

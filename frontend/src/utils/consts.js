@@ -5,3 +5,4 @@ export const TASK_NEW_PAGE ='/task/create/';
 export const TASK_EDIT_PAGE ='/task/edit/';
 export const REGISTRATION ='/registration/';
 export const LOGIN ='/login/';
+export const PERSONAL_ACCOUNT ='/personalArea/';
