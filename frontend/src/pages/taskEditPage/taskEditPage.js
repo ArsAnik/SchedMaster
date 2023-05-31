@@ -12,43 +12,30 @@ import myTime from "../../utils/myTime";
 import {ERROR_404_PAGE} from "../../utils/consts";
 
 function TasksEditPage() {
-    const [data, setData] = useState(1);
     const task_id = useParams().id;
 
     const user_id = localStorage.getItem('user');
 
-    useEffect(() => {
-        fetch(`/api/task/${task_id}`).
-        then(response => response.json()).
-        then(response => setData(response.data[0]));
-    }, []);
 
     if(!user_id){
         return(
             <Navigate to={ERROR_404_PAGE}/>
         );
     }
-    if(data){
-        return(
+    return(
 
         <div className="main-container">
             <HeaderComponent/>
             <BackButtonComponent/>
             <EditTaskComponent
-                id={data.id}
-                name={data.name}
-                date_begin={myTime.getFullDate(new Date(data.begin_date))}
-                date_end={myTime.getFullDate(new Date(data.end_date))}
-                description={data.description}
+                id={task_id}
+                // name={data.name}
+                // date_begin={myTime.getFullDate(new Date(data.begin_date))}
+                // date_end={myTime.getFullDate(new Date(data.end_date))}
+                // description={data.description}
             />
         </div>
         );
-    } else
-    {
-        return(
-            <Navigate to={ERROR_404_PAGE}/>
-        );
-    }
 }
 
 export default TasksEditPage;

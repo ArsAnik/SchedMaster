@@ -1,16 +1,27 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './EditTaskComponent.css';
 import {useNavigate} from "react-router-dom";
 
 export default function EditTaskComponent(props){
     const navigate = useNavigate();
+    const task_id = props.id;
 
-    setTimeout(()=>{}, 1000);
-    const [name, setName] = useState(props.name);
-    const [description, setDescription] = useState(props.description);
-    const [begin_date, setBeginDate] = useState(props.date_begin);
-    const [end_date, setEndDate] = useState(props.date_end);
+    const [name, setName] = useState("");
+    const [description, setDescription] = useState("");
+    const [begin_date, setBeginDate] = useState("");
+    const [end_date, setEndDate] = useState("");
     const all_day = 0;
+
+    useEffect(() => {
+        fetch(`/api/task/${task_id}`).
+        then(response => response.json()).
+        then(response => {
+            setName(response.data[0].name);
+            setDescription(response.data[0].description);
+            setBeginDate(response.data[0].begin_date);
+            setEndDate(response.data[0].end_date);
+        });
+    }, []);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
