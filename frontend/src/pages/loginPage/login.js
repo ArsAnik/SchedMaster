@@ -4,6 +4,8 @@ import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
 import './login.css'
+import reg from '../../pictures/registration_krakozyabri.svg'
+import link from '../../pictures/registration-link-account.svg'
 import {useNavigate} from "react-router-dom";
 
 function Login() {
@@ -28,10 +30,10 @@ function Login() {
         <div className="main-container">
             <div className="header-enter">
                 <div>
-                    <img src="../pictures/registration_krakozyabri.svg" className="image"/>
+                    <img src={reg} className="image"/>
                 </div>
 
-                <a href="@">
+                <a href="/">
                     <svg className="back-button-svg" width="44" height="50" viewBox="0 0 44 50" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path className="back-button-fill"
@@ -42,7 +44,7 @@ function Login() {
                 </a>
 
 
-                <a href="@"> <img src="../pictures/registration-link-account.svg" className="person-account-link"/></a>
+                <img src={link} className="person-account-link"/>
             </div>
             <div className="enter-window">
 
@@ -70,7 +72,6 @@ function Login() {
                             />
                         </div>
                         <button className="continue-button" type="submit">Войти</button>
-                        <div className="forget-password"><a href="@" className="forget-password-link">забыл пароль</a></div>
                     </form>
                 </div>
 

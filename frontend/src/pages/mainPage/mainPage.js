@@ -3,14 +3,15 @@ import React, {useState} from 'react';
 import '../ImportantStyles/font.css'
 import '../ImportantStyles/reset.css'
 import '../ImportantStyles/common.css'
-import './mainPage.css.css'
+import './mainPage.css'
+import main from '../../pictures/mainPagePic.svg'
 
 function mainPage() {
 
     return (
         <div className="main-body">
             <div>
-                <img className="image" src="../pictures/mainPagePic.svg">
+                <img className="image" src={main}/>
             </div>
 
             <div className="head">
@@ -25,10 +26,10 @@ function mainPage() {
             <div className="header-come">
 
                 <div className="enter">
-                    <a className="coming" href="/"> Войти</a>
+                    <a className="coming" href="/login/"> Войти</a>
                 </div>
                 <div className="registre">
-                    <a className="coming" href="/registration"> Регистрация</a>
+                    <a className="coming" href="/registration/"> Регистрация</a>
                 </div>
 
             </div>

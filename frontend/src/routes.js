@@ -6,8 +6,13 @@ import taskNewPage from "./pages/taskNewPage/taskNewPage";
 import taskEditPage from "./pages/taskEditPage/taskEditPage";
 import registration from "./pages/registration/registration";
 import login from "./pages/loginPage/login";
+import mainPage from "./pages/mainPage/mainPage";
 
 export const allRoutes = [
+    {
+        path: pages.MAIN_PAGE,
+        Component: mainPage
+    },
     {
         path: pages.TASKS_PAGE,
         Component: TasksPage
