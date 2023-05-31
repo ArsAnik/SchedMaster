@@ -5,6 +5,7 @@ import Error404Page from "./pages/error404Page/error404Page";
 import taskNewPage from "./pages/taskNewPage/taskNewPage";
 import taskEditPage from "./pages/taskEditPage/taskEditPage";
 import registration from "./pages/registration/registration";
+import login from "./pages/loginPage/login";
 
 export const allRoutes = [
     {
@@ -30,5 +31,9 @@ export const allRoutes = [
     {
         path: pages.REGISTRATION,
         Component: registration
+    },
+    {
+        path: pages.LOGIN,
+        Component: login
     }
 ]

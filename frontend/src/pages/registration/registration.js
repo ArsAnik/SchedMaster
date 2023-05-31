@@ -19,6 +19,7 @@ function Registration() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+
         if(password === password2){
             await fetch('/api/user/create', {
                 method: 'POST',
@@ -103,7 +104,7 @@ function Registration() {
                             />
                         </div>
                     </div>
-                    <button className="save-button" type="submit">Сохранить</button>
+                    <button className="continue-button" type="submit">Сохранить</button>
                 </form>
 
             </div>
