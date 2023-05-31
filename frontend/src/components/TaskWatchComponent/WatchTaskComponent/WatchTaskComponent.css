@@ -1,3 +1,13 @@
+.header-text-task{
+    background-color: rgba(153, 51, 204, 0.3);
+}
+
+.back-button{
+    position: absolute;
+    top: 9.7%;
+    left: 4.5%;
+}
+
 .watch-task{
     position: relative;
     margin: 70px auto;
@@ -8,13 +18,15 @@
     border-radius: 20px;
 }
 
-.watch-task .task-header{
+.task-header{
     margin: 5.6% auto 0 auto;
     width: 558px;
     height: 49px;
 
-
-    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
@@ -23,61 +35,61 @@
     text-align: center;
 }
 
-.watch-task .task-header-underline{
+.task-header-underline{
 
     margin: 0 auto 0 auto;
     width: 559px;
-    height: 0;
+    height: 0px;
     border: 1px solid #000000;
 }
 
-.watch-task .task-additional{
-    text-align: center;
+.task-additional{
     margin: 0 auto;
     margin-top: 1.7%;
     width: 255px;
     height: 72px;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
 }
 
-.watch-task .additional-information{
+.additional-information{
     display: flex;
     align-items: center;
     justify-content:flex-end;
 }
-.watch-task .additional-remembering{
+
+.additional-remembering{
     display: flex;
     align-items:flex-start;
     justify-content:flex-end;
 }
-.watch-task .remembering-word{
+.remembering-word{
     margin-right: 3%;
 }
 
-.watch-task .remembering-times{
+.remembering-times{
     text-align: end;
 }
-.watch-task .remembering-time span{
-    font-family: 'Montserrat', sans-serif;
+.remembering-time span{
+    font-family: 'Montserrat';
     font-weight: 600;
 }
-.watch-task .task-description{
+.task-description{
     margin-top: 3%;
     margin-left: 9%;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
-.watch-task .description-header{
+.description-header{
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 }
-.watch-task .description-text{
+.description-text{
     width: 774px;
 
     display: flex;
@@ -90,3 +102,56 @@
     line-height: 24px;
 
 }
+.modify-button{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.modify-button:hover{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
+
+.modify-button:active{
+    filter: drop-shadow(0px 0px 7px #9933CC);
+}
+@media (max-width: 1000px){
+.header{
+    display: none;
+}
+.task-header-underline{
+    width: 240px;
+}
+.watch-task{
+    width: 330px;
+    height: 551px;
+    margin: 44% auto;
+}
+.task-header{
+    width: 233px;
+    height: 35px;
+    font-size: 26px;
+    line-height: 32px;
+}
+.task-additional{
+    padding-right: 15px;
+}
+.additional-information{
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+.additional-remembering{
+    font-size: 16px;
+    line-height: 20px;
+}
+.description-header{
+    font-size: 16px;
+    line-height: 20px;
+}
+.description-text{
+    width: 274px;
+    height: 76px;
+    font-size: 14px;
+    line-height: 17px;
+}}

@@ -4,7 +4,6 @@ import './HeaderComponent.css'
 import logo from '../../pictures/logo.svg';
 
 export default function HeaderComponent(props){
-    if(window.screen.availWidth > 1162){
         return(
             <header className="header">
                 <div className="header-text">
@@ -26,19 +25,4 @@ export default function HeaderComponent(props){
                 </div>
             </header>
         )
-    }
-    else
-    {
-        return(
-            <header className="header_mob">
-                <div className="menu-block">
-
-                </div>
-                <div className="header_top">
-                    <img src={logo}/>
-                    <span className="header_top_text">Sched-master</span>
-                </div>
-            </header>
-        )
-    }
 }

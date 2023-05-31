@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import './WatchTaskComponent.css';
 import ModifyButtonComponent from "../ModifyButtonComponent/ModifyButtonComponent";
 import DeleteButtonComponent from "../DeleteButtonComponent/DeleteButtonComponent";
+import '../../TaskEditComponent/EditTaskComponent.css';
 
 function WatchTaskComponent(props){
 

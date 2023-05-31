@@ -23,53 +23,54 @@ export default function EditTaskComponent(props){
         navigate('/tasksPage');
     };
 
-    return(
-        <div className="edit-task">
+    if(window.screen.width > 1000){
+        return(
+            <div className="edit-task">
 
-            <form>
-                <div className="task-header">
+                <form>
+                    <div className="task-header">
 
-                    <input type="text"
-                           placeholder="Введите название"
-                           className="header-modify"
-                           value={name}
-                           onChange={(event) => setName(event.target.value)}
-                    />
-
-                </div>
-
-            <div className="task-header-underline"></div>
-            <div className="task-additional">
-
-                <div className="task-modify-elements">
-                    <div className="element-data-start">
-
-                        <span className="text-link-color">Дата и время начала: </span>
-                        <input
-                            type="datetime-local"
-                            value={begin_date}
-                            onChange={(event) => setBeginDate(event.target.value)}
-                            required
+                        <input type="text"
+                               placeholder="Введите название"
+                               className="header-modify"
+                               value={name}
+                               onChange={(event) => setName(event.target.value)}
                         />
+
                     </div>
 
-                    <div className="element-data-end">
+                    <div className="task-header-underline"></div>
+                    <div className="task-additional">
 
-                        <span className="text-link-color">Дата и время окончания: </span>
-                        <input
-                            type="datetime-local"
-                            value={end_date}
-                            onChange={(event) => setEndDate(event.target.value)}
-                            required
-                        />
+                        <div className="task-modify-elements">
+                            <div className="element-data-start">
+
+                                <span className="text-link-color">Дата и время начала: </span>
+                                <input
+                                    type="datetime-local"
+                                    value={begin_date}
+                                    onChange={(event) => setBeginDate(event.target.value)}
+                                    required
+                                />
+                            </div>
+
+                            <div className="element-data-end">
+
+                                <span className="text-link-color">Дата и время окончания: </span>
+                                <input
+                                    type="datetime-local"
+                                    value={end_date}
+                                    onChange={(event) => setEndDate(event.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div className="task-description">
+                    <div className="task-description">
 
-                <div className="description-header"><span>Описание Задачи:</span></div>
-                    <div className="description-text">
+                        <div className="description-header"><span>Описание Задачи:</span></div>
+                        <div className="description-text">
                         <textarea
                             className="description-text-modify"
                             placeholder="добавьте описание"
@@ -77,9 +78,76 @@ export default function EditTaskComponent(props){
                             onChange={(event) => setDescription(event.target.value)}
                         />
                         </div>
-                </div>
-                <button onSubmit={handleSubmit} className="save-button" type="submit">Сохранить</button>
-            </form>
-        </div>
-    )
+                    </div>
+                    <button onSubmit={handleSubmit} className="save-button" type="submit">Сохранить</button>
+                </form>
+            </div>
+        )
+    }
+    else
+    {
+        return(
+            <div className="edit-task-mobile">
+                <form className="task-header-form">
+
+                    <div className="task-header">
+
+                        <input
+                            type ="text"
+                            value="Наглаживание кота"
+                            className="header-modify"
+                        />
+
+                    </div>
+
+                <div className="task-header-underline"></div>
+                <div className="task-additional">
+
+                    <div className="additional-information">
+                        <div className="task-modify-elements">
+                            <div className="element-data-start">
+
+                                <span className="text-link-color">Дата и время начала: </span>
+                                <input
+                                    type="datetime-local"
+                                    value={begin_date}
+                                    onChange={(event) => setBeginDate(event.target.value)}
+                                    required
+                                />
+                            </div>
+
+                            <div className="element-data-end">
+
+                                <span className="text-link-color">Дата и время окончания: </span>
+                                <input
+                                    type="datetime-local"
+                                    value={end_date}
+                                    onChange={(event) => setEndDate(event.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="task-description">
+
+                        <div className="description-header"><span>Описание Задачи:</span></div>
+                        <div className="description-text">
+                            <textarea
+                                className="description-text-modify"
+                            />
+                        </div>
+
+                    </div>
+
+                        <button className="save-button-container">
+                            <div className="save-button">
+                                Сохранить
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        )
+    }
 }

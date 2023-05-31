@@ -3,7 +3,7 @@
     margin: 5% auto;
 
     width: 554px;
-    height: 624px;
+    height: 500px;
 
     background: rgba(153, 51, 204, 0.3);
     border: 0.5px solid #9933CC;
@@ -11,7 +11,7 @@
 }
 
 .new-task .task-header{
-    width: 500px;
+    width: 380px;
     height: 49px;
 
     margin: 8% auto 0 auto;
@@ -53,7 +53,7 @@
 }
 
 .new-task .task-header-input{
-    width: 500px;
+    width: 380px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -154,7 +154,7 @@
 @media(max-width:767px) {
     .new-task{
         max-width: 330px;
-        height: 551px;
+        height: 480px;
         margin: 36% auto;
     }
     .new-task .description-header{
