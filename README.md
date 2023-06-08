@@ -2,7 +2,9 @@
 Timetable for students
 
 backend - файлы backend части
+
 front_pages - файлы с вёрсткой страниц
+
 frontend - файлы frontend части
 
 запросы на сервере бекэнда:
